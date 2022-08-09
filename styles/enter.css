@@ -1,0 +1,30 @@
+.enterBut{
+    border-radius: 50px;
+    position:fixed;
+    margin-top: 50px;
+    margin-left: 550px;
+    height: 30px;
+    width: 150px;
+    font-size: large;
+    background-color: rgb(155, 183, 184);
+    border-color: rgb(246, 161, 185);
+    border-bottom-color: rgb(246, 161, 185);
+    border-top-color: rgb(246, 161, 185);
+    border-left-color: rgb(246, 161, 185);
+    border-right-color: rgb(246, 161, 185);
+}
+.nameGame{
+    margin-top: 50px;
+    text-align: center;
+    color:red;
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.background{
+  height:550px;
+  width: 1260px;
+  padding: none;
+  padding-left: 0%;
+  margin: 0%;
+background-color: rgb(186, 167, 177);
+}
