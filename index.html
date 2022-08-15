@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/index.css'>
+    <script src="scripts/index.js"></script>
+
+</head>
+<body>
+<!--
+design by https://www.behance.net/vahanhovh
+-->
+<div class="splash"></div>
+<div class="container">
+
+           
+            <div class="stop-game game-full-flex">
+
+                <div class="score-container">
+
+                    <h1>Coloron</h1>
+
+                    <div class="final-score"></div>
+                    <div class="result"></div>
+
+                    <h4>Tweet to challenge friends</h4>
+
+                    <p>
+                        <a class="tweet" href="#" onclick="game.generateTweet()">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> Tweet
+                        </a>
+                    </p>
+
+                    <div>
+                        <a class="play-again" href="#" onclick="game.start()">Play Again</a>
+                        <a class="main-menu" href="#" onclick="game.intro()">Menu</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="small-glows"></div>
+
+            <div class="glow"><div class="sun"></div></div>
+
+            <div class="waves">
+                <div class="top_wave"></div>
+                <div class="wave1"></div>
+                <div class="wave2"></div>
+                <div class="wave3"></div>
+                <div class="wave4"></div>
+            </div>
+
+            <div class="mounts">
+                <div class="mount1"></div>
+                <div class="mount2"></div>
+            </div>
+
+            <div class="clouds"></div>
+
+            <div class="scene">
+                <div class="learn-to-play">Click on the bars to change the color!</div>
+                <div class="score" id="score"></div>
+                <div class="ball-holder"></div>
+                <div class="sticks" id="sticks"></div>
+            </div>
+
+            <div class="noise"></div>
+
+        </div>
+</body>

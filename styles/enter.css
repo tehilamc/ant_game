@@ -1,4 +1,4 @@
-.enterBut{
+/* .enterBut{
     border-radius: 50px;
     position:fixed;
     margin-top: 50px;
@@ -27,4 +27,77 @@
   padding-left: 0%;
   margin: 0%;
 background-color: rgb(186, 167, 177);
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #6CD9CE;
+  --secondary-color: #D93BA1;
+  --complimentary-color: #2E2473;
+}
+.img{
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  opacity: 20%;
+}
+.container {
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  background-color:antiquewhite;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ position: relative;
+}
+
+h1 {
+  font-size: 150px;
+  color:#D93BA1;
+  transform: translateY(-600px);
+  animation: 1.2s slideIn ease-in-out forwards 1s;
+  z-index: 10;
+  opacity: 0;
+  position: relative;
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    transform: scale(.5);
+    animation: .5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
+}
+
+@keyframes skewBg {
+  0% {
+    transform: scale(.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes underline {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
