@@ -2,13 +2,17 @@ var mySound;
 var myMusic;
 
 function startGame() {
+    console.log("Aa");
     mySound = new sound("music.mp3");
+    console.log("bb");
     myMusic = new sound("music.mp3");
+    console.log("cc");
     myMusic.play();
-    myGameArea.start();
+    console.log("dd");
 }
 
 function sound(src) {
+    console.log("ee");
     this.sound = document.createElement("audio");
     this.sound.src = src;
     this.sound.setAttribute("preload", "auto");

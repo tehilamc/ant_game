@@ -6,26 +6,49 @@
   <link rel='stylesheet' type='text/css' media='screen' href='styles/page.css'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   <script src='scripts/page.js' defer></script>
-  <script src='scripts/sounds.js'></script>
 
 
 </head>
 
-<body onload="startGame()">
+<body>
   <section class="score">
     <span class="correct">0</span>/<span class="total">0</span>
     <button id="play-again-btn">Play Again</button>
   </section>
   <section class="draggable-items">
-    <!-- Will be dynamically populated - Example Element: -->
-    <!-- <i class="fab fa-codepen draggable" draggable="true" style="color: #111111;" id="codepen"></i> -->
+   
   </section>
   <section class="matching-pairs">
-    <!-- Will be dynamically populated - Example Element: -->
-    <!-- <div class="matching-pair">
-      <span class="label">Codepen</span><span class="droppable" data-brand="codepen"></span>
-    </div> -->
   </section>
 </body>
-
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body >
+<script>
+    const button = document.querySelector("#button");
+const icon = document.querySelector("#button > i");
+const audio = document.querySelector("audio");
+
+button.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  button.classList.add("fade");
+});
+</script>
+
+</body>
+</html> -->
