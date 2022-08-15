@@ -469,7 +469,7 @@
 }
 
 body {
-  background-color: #28dad4;
+  background-color: #28DAD4;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -491,16 +491,14 @@ a:focus, a:active {
   width: 100%;
 }
 
-.waves,
-.mounts {
+.waves, .mounts {
   position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
 }
 
-.waves div,
-.mounts div {
+.waves div, .mounts div {
   position: absolute;
   width: 100%;
 }
@@ -635,29 +633,28 @@ a:focus, a:active {
 }
 
 .stick.red {
-  background-color: #ff4571;
+  background-color: #FF4571;
 }
 
 .stick.yellow {
-  background-color: #ffd145;
+  background-color: #FFD145;
 }
 
 .stick.purple {
-  background-color: #8260f6;
+  background-color: #8260F6;
 }
 
 .stick.inactive {
-  background-color: #4c4660;
+  background-color: #4C4660;
 }
 
-.ball,
-.ball-demo {
+.ball, .ball-demo {
   background: url(https://greghub.github.io/coloron/public/svg/ball.svg) right bottom;
   background-size: 64px 64px;
   width: 53px;
   height: 53px;
   z-index: 1011;
-  background-color: #ff4571;
+  background-color: #FF4571;
   border-radius: 50%;
 }
 
@@ -708,8 +705,8 @@ a:focus, a:active {
 .start-game .logo-holder {
   width: 513px;
   height: 162px;
-  background-color: #4c4660;
-  border: 4px solid #ff4571;
+  background-color: #4C4660;
+  border: 4px solid #FF4571;
   border-radius: 68px;
   text-align: center;
   margin-top: -10%;
@@ -730,7 +727,7 @@ a:focus, a:active {
 }
 .start-game .logo-holder .play-button {
   display: inline-block;
-  background-color: #ff4571;
+  background-color: #FF4571;
   border: 4px solid #fff;
   border-radius: 100px;
   color: #fff;
@@ -751,19 +748,17 @@ a:focus, a:active {
   font-size: 20px;
 }
 .start-game .logo-holder .hint span {
-  color: #ff4571;
+  color: #FF4571;
 }
 .start-game .how-to-play {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.start-game .how-to-play .section-1,
-.start-game .how-to-play .section-3 {
+.start-game .how-to-play .section-1, .start-game .how-to-play .section-3 {
   flex: 1;
 }
-.start-game .how-to-play .section-1 .content,
-.start-game .how-to-play .section-3 .content {
+.start-game .how-to-play .section-1 .content, .start-game .how-to-play .section-3 .content {
   justify-content: center;
 }
 .start-game .how-to-play h4 {
@@ -786,15 +781,15 @@ a:focus, a:active {
 }
 .start-game .how-to-play .bar.bar-1 {
   height: 180px;
-  background: #ff4571;
+  background: #FF4571;
 }
 .start-game .how-to-play .bar.bar-2 {
   height: 120px;
-  background: #ffd145;
+  background: #FFD145;
 }
 .start-game .how-to-play .bar.bar-3 {
   height: 150px;
-  background: #4c4660;
+  background: #4C4660;
 }
 .start-game .how-to-play .section-2 .bar {
   cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
@@ -803,18 +798,18 @@ a:focus, a:active {
   cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
 }
 .start-game .how-to-play .section-3 .ball-demo {
-  background-color: #815ff8;
+  background-color: #815FF8;
 }
 .start-game .how-to-play .section-3 .bar-1 {
   height: 120px;
-  background-color: #815ff8;
+  background-color: #815FF8;
 }
 
 .stop-game {
   justify-content: center;
 }
 .stop-game .score-container {
-  background-color: #4c4660;
+  background-color: #4C4660;
   width: 433px;
   height: 386px;
   border-radius: 38px;
@@ -829,14 +824,14 @@ a:focus, a:active {
   font-size: 64px;
 }
 .stop-game .score-container .final-score {
-  color: #ffe345;
+  color: #FFE345;
   font-weight: 900;
   font-size: 130px;
   letter-spacing: -6px;
   line-height: 110px;
 }
 .stop-game .score-container .result {
-  color: #ff4571;
+  color: #FF4571;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
@@ -849,14 +844,14 @@ a:focus, a:active {
   background: #fff;
   padding: 8px 20px;
   border-radius: 4px;
-  color: #55acee;
+  color: #55ACEE;
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
   display: inline-block;
 }
 .stop-game .score-container .tweet:hover {
-  background-color: #55acee;
+  background-color: #55ACEE;
   color: #fff;
 }
 .stop-game .score-container .tweet i {
@@ -866,7 +861,7 @@ a:focus, a:active {
   position: relative;
 }
 .stop-game .score-container .play-again {
-  background-color: #ff4571;
+  background-color: #FF4571;
   border: 2px solid #fff;
   color: #fff;
   text-decoration: none;
@@ -883,7 +878,7 @@ a:focus, a:active {
   background-color: #ff5f84;
 }
 .stop-game .score-container .main-menu {
-  background-color: #44bfa3;
+  background-color: #44BFA3;
   border: 2px solid #fff;
   color: #fff;
   text-decoration: none;
@@ -922,7 +917,7 @@ a:focus, a:active {
   position: fixed;
   right: 54px;
   top: 20px;
-  color: #33485f;
+  color: #33485F;
   font-size: 90px;
   font-weight: 900;
   letter-spacing: -0.1em;
@@ -953,7 +948,7 @@ a:focus, a:active {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #28dad4;
+    background-color: #28DAD4;
     background-image: url(https://greghub.github.io/coloron/public/images/coloron-image.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
