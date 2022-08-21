@@ -1,5 +1,7 @@
 
+    
 var ti;
+
 var timeleft = 60;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
@@ -33,7 +35,7 @@ function startTimer(duration, display) {
   }
 
   window.onload = function () {
-    var fiveMinutes = 60 ,
+    var fiveMinutes= 60 ,
     display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
   };
