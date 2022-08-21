@@ -121,3 +121,12 @@ body {
   #play-again-btn { top: -0.4rem; }
   #play-again-btn.play-again-btn-entrance { transform: translateX(7rem); }
 }
+#demo{
+
+    font-size: 20px;
+    left:0 px;
+
+}
+.tor{
+  display: inline-block; 
+}

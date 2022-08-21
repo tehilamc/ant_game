@@ -1,3 +1,26 @@
+.mistakes{
+    margin-top: 60px;
+    font-size: larger;
+    background-color: rgb(72, 74, 72);
+  color: white;
+  border-radius: 50px;
+  border-color: aliceblue;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+.play_again{
+    margin-top: 60px;
+    font-size: larger;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    border-color: aliceblue;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
 @-webkit-keyframes animacao1 {
     0% {
         background: #D62623;
@@ -45,10 +68,13 @@ body {
 }
 
 #tudo {
+    text-align: center;
+    position: fixed;
     width: 750px;
-    height: 580px;
+    height: 500px;
     margin: auto;
     margin-top: 20px;
+    margin-left: 280px;
     border-radius: 40px;
     -webkit-animation-name: animacao1;
     -webkit-animation-duration: 1s;
