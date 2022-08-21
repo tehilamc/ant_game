@@ -24,7 +24,7 @@
 }
 
 
-  .level_easy{
+  #level_easy{
     margin: 0;
     position: absolute;
     top: 50%;
@@ -50,7 +50,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-200%, -10%);
   }
-  .easy{
+  #easy{
     width: 100px;
     height: 100px;
     font-size: 10px;
