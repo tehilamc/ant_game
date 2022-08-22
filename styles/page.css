@@ -7,7 +7,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  /* background-color: #eee; */
+  background-color: #eee;
   color: #111;
 
 }
@@ -53,11 +53,13 @@ top:-200px;
   transform: translateX(6rem);
 }
 .draggable-items {
+  
   top:-150px;
   display: flex;
   justify-content: center;
   margin: -190px 1rem 1.5rem 1rem;
   transition: opacity 0.5s;
+
 }
 .draggable {
   height: 5rem;
@@ -76,6 +78,7 @@ top:-200px;
 }
 .matching-pairs {
   transition: opacity 0.5s;
+  
 }
 .matching-pair {
   height: 6rem;
@@ -84,7 +87,8 @@ top:-200px;
   display: flex;
   justify-content: space-between;
 }
-.matching-pair span {
+.matching-pair span { 
+  display: inline-block; 
   height: 100%;
   display: flex;
   justify-content: center;
@@ -171,3 +175,27 @@ top:-200px;
   opacity: 10%;
   background-repeat: repeat-x;
 } */
+
+#button {
+  font-size: 16px;
+  color: #eee;
+  position: absolute;
+  width: 50px;
+  padding: 15px;
+  top:730px;
+  left:1202px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background: rgb(199, 80, 100);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  opacity: 90%;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+#button.fade:hover {
+  opacity: 60%;
+}
+
+

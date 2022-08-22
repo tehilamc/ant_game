@@ -508,7 +508,7 @@ const totalMatchingPairs = 5; // Should be <= totalDraggableItems
 const scoreSection = document.querySelector(".score");
 const correctSpan = scoreSection.querySelector(".correct");
 const totalSpan = scoreSection.querySelector(".total");
-// const playAgainBtn = scoreSection.querySelector("#play-again-btn");
+const playAgainBtn = scoreSection.querySelector("#play-again-btn");
 
 const draggableItems = document.querySelector(".draggable-items");
 const matchingPairs = document.querySelector(".matching-pairs");
@@ -617,29 +617,29 @@ function drop(event) {
   }
 }
 
-// Other Event Listeners
-// playAgainBtn.addEventListener("click", playAgainBtnClick);
-// function playAgainBtnClick() {
-//   playAgainBtn.classList.remove("play-again-btn-entrance");
-//   correct = 0;
-//   total = 0;
-//   draggableItems.style.opacity = 0;
-//   matchingPairs.style.opacity = 0;
-//   setTimeout(() => {
-//     scoreSection.style.opacity = 0;
-//   }, 100);
-//   setTimeout(() => {
-//     playAgainBtn.style.display = "none";
-//     while (draggableItems.firstChild) draggableItems.removeChild(draggableItems.firstChild);
-//     while (matchingPairs.firstChild) matchingPairs.removeChild(matchingPairs.firstChild);
-//     initiateGame();
-//     correctSpan.textContent = correct;
-//     totalSpan.textContent = total;
-//     draggableItems.style.opacity = 1;
-//     matchingPairs.style.opacity = 1;
-//     scoreSection.style.opacity = 1;
-//   }, 500);
-// }
+//Other Event Listeners
+playAgainBtn.addEventListener("click", playAgainBtnClick);
+function playAgainBtnClick() {
+  playAgainBtn.classList.remove("play-again-btn-entrance");
+  correct = 0;
+  total = 0;
+  draggableItems.style.opacity = 0;
+  matchingPairs.style.opacity = 0;
+  setTimeout(() => {
+    scoreSection.style.opacity = 0;
+  }, 100);
+  setTimeout(() => {
+    playAgainBtn.style.display = "none";
+    while (draggableItems.firstChild) draggableItems.removeChild(draggableItems.firstChild);
+    while (matchingPairs.firstChild) matchingPairs.removeChild(matchingPairs.firstChild);
+    initiateGame();
+    correctSpan.textContent = correct;
+    totalSpan.textContent = total;
+    draggableItems.style.opacity = 1;
+    matchingPairs.style.opacity = 1;
+    scoreSection.style.opacity = 1;
+  }, 500);
+}
 
 // Auxiliary functions
 function generateRandomItemsArray(n, originalArray) {
@@ -653,9 +653,3 @@ function generateRandomItemsArray(n, originalArray) {
   }
   return res;
 }
-
-
-// levelTwo.classList.toggle("display");
-
-// levelTwo.style.display = 'none';
-
