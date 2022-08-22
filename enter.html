@@ -4,19 +4,26 @@
 <head>
     <title>Page Title</title>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/enter.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/sound.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 </head>
 
 <body>
     
-    <div>
+    <!-- <div> -->
         <div class='container projects'>
-            <img src="images/back.png" class="img">
-            <div class="name_Game">Matching Words</div>
-            <div class="overlay"></div>
-            <div class="start" onclick="location.href='page.html'"><button class="btn_start">Play</button></div>
+            <img src="images/back.jpg" class="img">
+            <!-- <div class="name_Game">Matching Words</div> -->
+            <!-- <div class="overlay"></div> -->
+            <div class="start" onclick="location.href='enter2.html'"  ><button class="btn_start">Play</button></div>
         </div>
-    </div>
-    <audio src="po.mp3" autoplay loop></audio>
+    <!-- </div> -->
+    <!-- audio in project -->
+    <audio src="https://www.bensound.com/bensound-music/bensound-moose.mp3"></audio>
+    <button id="button">
+        <i class="fas fa-volume-up"></i>
+    </button>
+    <script src="scripts/sounds.js"></script>
 </body>
 
 </html>
