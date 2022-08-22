@@ -59,6 +59,9 @@ function timer_normal() {
       window.location.replace('game_over.html');
     }
   }
+  // function timerA(level){
+  //   console.log(level);
+  // }
   
 
 
