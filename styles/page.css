@@ -7,7 +7,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  /* background-color: #eee; */
+  background-color: #eee;
   color: #111;
 
 }
@@ -53,11 +53,13 @@ top:-200px;
   transform: translateX(6rem);
 }
 .draggable-items {
+  
   top:-150px;
   display: flex;
   justify-content: center;
   margin: -190px 1rem 1.5rem 1rem;
   transition: opacity 0.5s;
+
 }
 .draggable {
   height: 5rem;
@@ -76,6 +78,7 @@ top:-200px;
 }
 .matching-pairs {
   transition: opacity 0.5s;
+  
 }
 .matching-pair {
   height: 6rem;
@@ -84,7 +87,7 @@ top:-200px;
   display: flex;
   justify-content: space-between;
 }
-.matching-pair span {
+.matching-pair span { 
   height: 100%;
   display: flex;
   justify-content: center;

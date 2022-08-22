@@ -1,49 +1,4 @@
-/* .enterBut{
-    border-radius: 50px;
-    position:fixed;
-    margin-top: 50px;
-    margin-left: 550px;
-    height: 30px;
-    width: 150px;
-    font-size: large;
-    background-color: rgb(155, 183, 184);
-    border-color: rgb(246, 161, 185);
-    border-bottom-color: rgb(246, 161, 185);
-    border-top-color: rgb(246, 161, 185);
-    border-left-color: rgb(246, 161, 185);
-    border-right-color: rgb(246, 161, 185);
-}
-.nameGame{
-    margin-top: 50px;
-    text-align: center;
-    color:red;
-    font-size: 70px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.background{
-  height:550px;
-  width: 1260px;
-  padding: none;
-  padding-left: 0%;
-  margin: 0%;
-background-color: rgb(186, 167, 177);
-} */
-@import url("//fonts.googleapis.com/css?family=Pacifico&text=Pure");
-@import url("//fonts.googleapis.com/css?family=Roboto:700&text=css");
-@import url("//fonts.googleapis.com/css?family=Kaushan+Script&text=!");
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --primary-color: #6CD9CE;
-  --secondary-color: #D93BA1;
-  --complimentary-color: #2E2473;
-}
 
 .img {
   width: 100%;
@@ -65,74 +20,6 @@ background-color: rgb(186, 167, 177);
 
 }
 
-.name_Game {
-  right:100px;
-  left:100px;
-  text-align: center;
-  font: 150px/0.65 "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS", Helvetica, sans-serif;
-  position: absolute;
-  top: -10%;
-  width: 100%;
-
-  text-shadow: 0 1px 0 hsl(174, 5%, 80%),
-    0 2px 0 hsl(174, 5%, 75%),
-    0 3px 0 hsl(174, 5%, 70%),
-    0 4px 0 hsl(174, 5%, 66%),
-    0 5px 0 hsl(174, 5%, 64%),
-    0 6px 0 hsl(174, 5%, 62%),
-    0 7px 0 hsl(174, 5%, 61%),
-    0 8px 0 hsl(174, 5%, 60%),
-
-    0 0 5px rgba(0, 0, 0, .05),
-    0 1px 3px rgba(0, 0, 0, .2),
-    0 3px 5px rgba(0, 0, 0, .2),
-    0 5px 10px rgba(0, 0, 0, .2),
-    0 10px 10px rgba(0, 0, 0, .2),
-    0 20px 20px rgba(0, 0, 0, .3);
-  text-align: center;
-  font-size: 100px;
-  color: red;
-  transform: translateY(-600px);
-  animation: 1.2s slideIn ease-in-out forwards 1s;
-  z-index: 10;
-  opacity: 0;
-  position: relative;
-}
-.overlay {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  opacity: 0;
-  left: 0;
-  right: 0;
-  transform: scale(.5);
-  animation: .5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
-}
-
-@keyframes skewBg {
-  0% {
-    transform: scale(.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes underline {
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes slideIn {
-  100% {
-    transform: translateY(-90px);
-    opacity: 1;
-  }
-}
-
 .start{
   text-align: center;
   -ms-transform: translate(-50%, -50%);
@@ -148,19 +35,3 @@ background-color: rgb(186, 167, 177);
   height: 50px;
   text-align: center;
 }
-/* 
-.flex-container {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: center;
-}
-
-
-
-.flex-container > div {
-  width: 100px;
-  margin: 10px;
-  line-height: 75px;
-  font-size: 30px;
-} */
