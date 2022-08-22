@@ -1,23 +1,4 @@
-/* .Instructions{ */
- /* position: relative;
- margin-top: -200px;
-   */
 
-/* .enterBut{
-    border-radius: 50px;
-    position:fixed;
-    margin-top: 50px;
-    margin-left: 550px;
-    height: 30px;
-    width: 150px;
-    font-size: large;
-    background-color: rgb(155, 183, 184);
-    border-color: rgb(246, 161, 185);
-    border-bottom-color: rgb(246, 161, 185);
-    border-top-color: rgb(246, 161, 185);
-    border-left-color: rgb(246, 161, 185);
-    border-right-color: rgb(246, 161, 185);
-} */
 .title{
   color:blue;
   direction: rtl;

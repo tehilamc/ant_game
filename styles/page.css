@@ -77,6 +77,9 @@ top:-200px;
   opacity: 0.5;
 }
 .matching-pairs {
+  display: flex;
+  justify-content: center;
+  margin: 80px 6rem 1.5rem 1rem;
   transition: opacity 0.5s;
   
 }
@@ -88,7 +91,7 @@ top:-200px;
   justify-content: space-between;
 }
 .matching-pair span { 
-  display: inline-block; 
+   display: inline-block; 
   height: 100%;
   display: flex;
   justify-content: center;
@@ -97,8 +100,16 @@ top:-200px;
   user-select: none;
 }
 .label {
-  width: 15rem;
-  font-size: 2rem;
+   width: 4.5rem;
+  margin-top: 10px;
+  display: flex;
+  /* justify-content: space-between; */
+/* scroll-padding-block-end: 10px; */
+  /* -ms-transform: translate(50%, 50%); */
+  transform: translate(210%, 60%);
+  font-size: 1.3rem;
+  /* margin: 0px 1rem 0rem 1rem; */
+ 
 }
 .droppable {
   width: 6rem;
@@ -182,8 +193,8 @@ top:-200px;
   position: absolute;
   width: 50px;
   padding: 15px;
-  top:730px;
-  left:1202px;
+  top:510px;
+  left:1220px;
   border: none;
   border-radius: 2px;
   outline: none;
