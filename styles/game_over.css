@@ -1,15 +1,18 @@
-.mistakes{
+#mistakes{
+    margin-left:350px;
     margin-top: 60px;
     font-size: larger;
-    background-color: rgb(72, 74, 72);
+    background-color: green;
   color: white;
   border-radius: 50px;
   border-color: aliceblue;
   width: 200px;
   height: 50px;
   text-align: center;
-}
-.play_again{
+
+  }
+#play_again{
+    margin-left:30px;
     margin-top: 60px;
     font-size: larger;
     background-color: green;
@@ -113,7 +116,7 @@ body {
     text-shadow: 5px 5px #000000;
     color: #ffffff;
 }
-
+/* 
 .continue {
     width: 750px;
     height: auto;
@@ -129,13 +132,15 @@ body {
     font-family: corbel;
     color: #ffffff;
     text-shadow: 2.5px 2.5px #000000;
-}
+} */
 
 .opcoes {
     width: 550px;
     height: auto;
     padding-top: 50px;
     margin: auto;
+  
+
 }
 
 .yes a {
@@ -146,11 +151,12 @@ body {
     color: #ffffff;
     text-decoration: none;
     text-shadow: 2.5px 2.5px #000000;
-    padding: 25px 110px 25px 110px;
-    border: 1px solid #000000;
+    width: 200px;
+    height: 50px;
+    /* padding: 10px 50px 15px 50px; */
+    border: 1px solid green;
     border-radius: 20px;
-    background: #006400;
-    margin-right: 30px;
+    background: green;
     float: left;
 }
 
@@ -208,105 +214,73 @@ body {
 }
 
 
-
-.no a {
+.yes1 a {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     font-family: corbel;
     color: #ffffff;
     text-decoration: none;
-    text-shadow: 1.5px 1.5px #FB3733;
-    padding: 25px 100px 25px 100px;
+    text-shadow: 2.5px 2.5px #000000;
+    width: 200px;
+    height: 50px;
+    /* padding: 10px 50px 15px 50px; */
+    border: 1px solid green;
     border-radius: 20px;
-    background: #000000;
+    background: green;
     float: left;
 }
 
 
-@-webkit-keyframes animacao3 {
-    0% {
-        -webkit-transform: translate(-5px, 0px);
+
+@-webkit-keyframes animacao2 {
+    from {
+        -webkit-transform: scale(1);
     }
 
-    25% {
-        -webkit-transform: translate(-2.5px, 0px);
-    }
-
-    50% {
-        -webkit-transform: translate(0px, 0px);
-    }
-
-    75% {
-        -webkit-transform: translate(2.5px, 0px);
-    }
-
-    100% {
-        -webkit-transform: translate(5px, 0px);
+    to {
+        -webkit-transform: scale(1.2);
     }
 }
 
-@-moz-keyframes animacao3 {
-    0% {
-        -moz-transform: translate(-5px, 0px);
+@-moz-keyframes animacao2 {
+    from {
+        -moz-transform: scale(1);
     }
 
-    25% {
-        -moz-transform: translate(-2.5px, 0px);
-    }
-
-    50% {
-        -moz-transform: translate(0px, 0px);
-    }
-
-    75% {
-        -moz-transform: translate(2.5px, 0px);
-    }
-
-    100% {
-        -moz-transform: translate(5px, 0px);
+    to {
+        -moz-transform: scale(1.1);
     }
 }
 
-@keyframes animacao3 {
-    0% {
-        transform: translate(-5px, 0px);
+@keyframes animacao2 {
+    from {
+        transform: scale(1);
     }
 
-    25% {
-        transform: translate(-2.5px, 0px);
-    }
-
-    50% {
-        transform: translate(0px, 0px);
-    }
-
-    75% {
-        transform: translate(2.5px, 0px);
-    }
-
-    100% {
-        transform: translate(5px, 0px);
+    to {
+        transform: scale(1.1);
     }
 }
 
 
-.no a:hover {
-    -webkit-animation-name: animacao3;
-    -webkit-animation-duration: 0.15s;
+.yes1 a:hover {
+    -webkit-animation-name: animacao2;
+    -webkit-animation-duration: 0.8s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
 
-    -moz-animation-name: animacao3;
-    -moz-animation-duration: 0.15s;
+    -moz-animation-name: animacao2;
+    -moz-animation-duration: 0.8s;
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
     -moz-animation-direction: alternate;
 
-    animation-name: animacao3;
-    animation-duration: 0.15s;
+    animation-name: animacao2;
+    animation-duration: 0.8s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+

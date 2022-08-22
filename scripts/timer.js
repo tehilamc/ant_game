@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 // var ti;
 // var timeleft = 60;
 // var downloadTimer = setInterval(function () {
@@ -7,6 +8,22 @@
 //     // clearInterval(downloadTimer)
 //     timer_easy(ti)
 //   }
+=======
+    
+var ti;
+
+var timeleft = 60;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    ti=0; 
+    // clearInterval(downloadTimer)
+    timer_easy(ti)
+  }
+  
+  document.getElementById("progressBar").value = 60 - timeleft;
+  timeleft -= 1;
+}, 1000);
+>>>>>>> main
 
 //   document.getElementById("progressBar").value = 60 - timeleft;
 //   timeleft -= 1;
@@ -27,12 +44,20 @@ function startTimer(duration, display) {
 
     display.textContent = minutes + ":" + seconds;
 
+<<<<<<< HEAD
     if (--timer < 0) {
       timer = duration;
     }
   }, 1000);
 }
 document.getElementById("easy").addEventListener("click", timer1());
+=======
+  window.onload = function () {
+    var fiveMinutes= 60 ,
+    display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+  };
+>>>>>>> main
 
 
 function timer1() {
