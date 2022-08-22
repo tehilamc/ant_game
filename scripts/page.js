@@ -604,17 +604,17 @@ function drop(event) {
 
 
   // }
-  // setTimeout(() => {
-  //   correctSpan.textContent = correct;
-  //   totalSpan.textContent = total;
-  //   scoreSection.style.opacity = 1;
-  // }, 200);
-  // if (correct === Math.min(totalMatchingPairs, totalDraggableItems)) { // Game Over!!
-  //   playAgainBtn.style.display = "block";
-  //   setTimeout(() => {
-  //     playAgainBtn.classList.add("play-again-btn-entrance");
-  //   }, 200);
-  // }
+  setTimeout(() => {
+    correctSpan.textContent = correct;
+    totalSpan.textContent = total;
+    scoreSection.style.opacity = 1;
+  }, 200);
+  if (correct === Math.min(totalMatchingPairs, totalDraggableItems)) { // Game Over!!
+    playAgainBtn.style.display = "block";
+    setTimeout(() => {
+      playAgainBtn.classList.add("play-again-btn-entrance");
+    }, 200);
+  }
 }
 
 // Other Event Listeners
