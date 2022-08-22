@@ -1,31 +1,21 @@
-var mySound;
-var myMusic;
+const button = document.querySelector("#button");
+const icon = document.querySelector("#button > i");
+const audio = document.querySelector("audio");
 
-function startGame() {
-    console.log("Aa");
-    mySound = new sound("music.mp3");
-    console.log("bb");
-    myMusic = new sound("music.mp3");
-    console.log("cc");
-    myMusic.play();
-    console.log("dd");
-}
+button.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    icon.classList.remove("fa-volume-mute");
+    icon.classList.add("fa-volume-up");
+  } else {
+    audio.pause();
+    icon.classList.remove("fa-volume-up");
+    icon.classList.add("fa-volume-mute");
+  }
+  button.classList.add("fade");
+});
 
-function sound(src) {
-    console.log("ee");
-    this.sound = document.createElement("audio");
-    this.sound.src = src;
-    this.sound.setAttribute("preload", "auto");
-    this.sound.setAttribute("controls", "none");
-    this.sound.style.display = "none";
-    document.body.appendChild(this.sound);
-    this.play = function(){
-        this.sound.play();
-    }
-    this.stop = function(){
-        this.sound.pause();
-    }    
-}
 
 
 

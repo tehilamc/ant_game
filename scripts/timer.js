@@ -1,5 +1,4 @@
 
-    
 var ti;
 
 var timeleft = 60;
@@ -61,3 +60,9 @@ function timer_normal() {
     }
   }
   
+
+
+
+
+
+

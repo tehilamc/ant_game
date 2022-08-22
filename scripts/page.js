@@ -614,9 +614,14 @@ function drop(event) {
     setTimeout(() => {
       playAgainBtn.classList.add("play-again-btn-entrance");
     }, 200);
+<<<<<<< HEAD
 
   }
 
+=======
+  }
+}
+>>>>>>> main
 
 //Other Event Listeners
 playAgainBtn.addEventListener("click", playAgainBtnClick);

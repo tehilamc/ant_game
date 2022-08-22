@@ -1,12 +1,16 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> main
 .img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   position: absolute;
   opacity: 20%;
 }
 
+<<<<<<< HEAD
 .container {
   position:fixed;
   min-height: 100vh;
@@ -25,6 +29,8 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-280%, 350%);
 }
+=======
+>>>>>>> main
 .btn_start{
   font-size: larger;
   background-color: green;
@@ -34,4 +40,24 @@
   width: 200px;
   height: 50px;
   text-align: center;
+<<<<<<< HEAD
+=======
+}
+.start{
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-280%, 350%);
+}
+.container {
+  position:fixed;
+  min-height: 100vh;
+  /* position: relative; */
+  width: 100vw;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+>>>>>>> main
 }
