@@ -618,28 +618,28 @@ function drop(event) {
 }
 
 //Other Event Listeners
-playAgainBtn.addEventListener("click", playAgainBtnClick);
-function playAgainBtnClick() {
-  playAgainBtn.classList.remove("play-again-btn-entrance");
-  correct = 0;
-  total = 0;
-  draggableItems.style.opacity = 0;
-  matchingPairs.style.opacity = 0;
-  setTimeout(() => {
-    scoreSection.style.opacity = 0;
-  }, 100);
-  setTimeout(() => {
-    playAgainBtn.style.display = "none";
-    while (draggableItems.firstChild) draggableItems.removeChild(draggableItems.firstChild);
-    while (matchingPairs.firstChild) matchingPairs.removeChild(matchingPairs.firstChild);
-    initiateGame();
-    correctSpan.textContent = correct;
-    totalSpan.textContent = total;
-    draggableItems.style.opacity = 1;
-    matchingPairs.style.opacity = 1;
-    scoreSection.style.opacity = 1;
-  }, 500);
-}
+// playAgainBtn.addEventListener("click", playAgainBtnClick);
+// function playAgainBtnClick() {
+//   playAgainBtn.classList.remove("play-again-btn-entrance");
+//   correct = 0;
+//   total = 0;
+//   draggableItems.style.opacity = 0;
+//   matchingPairs.style.opacity = 0;
+//   setTimeout(() => {
+//     scoreSection.style.opacity = 0;
+//   }, 100);
+//   setTimeout(() => {
+//     playAgainBtn.style.display = "none";
+//     while (draggableItems.firstChild) draggableItems.removeChild(draggableItems.firstChild);
+//     while (matchingPairs.firstChild) matchingPairs.removeChild(matchingPairs.firstChild);
+//     initiateGame();
+//     correctSpan.textContent = correct;
+//     totalSpan.textContent = total;
+//     draggableItems.style.opacity = 1;
+//     matchingPairs.style.opacity = 1;
+//     scoreSection.style.opacity = 1;
+//   }, 500);
+// }
 
 // Auxiliary functions
 function generateRandomItemsArray(n, originalArray) {

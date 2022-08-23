@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #eee;
@@ -13,7 +14,7 @@ body {
 }
 
 .score {
-top:-200px;
+  top: -200px;
   font-family: monospace;
   text-align: center;
   font-size: 2rem;
@@ -23,6 +24,7 @@ top:-200px;
   position: relative;
   transition: opacity 0.2s;
 }
+
 #play-again-btn {
   position: absolute;
   top: -0.5rem;
@@ -32,9 +34,9 @@ top:-200px;
   font-weight: bold;
   color: #fff;
   background-color: #111;
-	border: 5px double #fff; 
-	border-radius: 14px;
-	padding: 8px 10px;  
+  border: 5px double #fff;
+  border-radius: 14px;
+  padding: 8px 10px;
   outline: none;
   letter-spacing: .05em;
   cursor: pointer;
@@ -42,25 +44,30 @@ top:-200px;
   opacity: 0;
   transition: opacity 0.5s, transform 0.5s, background-color 0.2s;
 }
+
 #play-again-btn:hover {
   background-color: #333;
 }
+
 #play-again-btn:active {
   background-color: #555;
 }
+
 #play-again-btn.play-again-btn-entrance {
   opacity: 1;
   transform: translateX(6rem);
 }
+
 .draggable-items {
-  
-  top:-150px;
+
+  top: -150px;
   display: flex;
   justify-content: center;
   margin: -190px 1rem 1.5rem 1rem;
   transition: opacity 0.5s;
 
 }
+
 .draggable {
   height: 5rem;
   width: 5rem;
@@ -73,16 +80,19 @@ top:-200px;
   cursor: move;
   transition: opacity 0.2s;
 }
+
 .draggable:hover {
   opacity: 0.5;
 }
+
 .matching-pairs {
   display: flex;
   justify-content: center;
   margin: 80px 6rem 1.5rem 1rem;
   transition: opacity 0.5s;
-  
+
 }
+
 .matching-pair {
   height: 6rem;
   width: 22rem;
@@ -90,6 +100,7 @@ top:-200px;
   display: flex;
   justify-content: space-between;
 }
+
 .matching-pair span { 
    display: inline-block; 
   height: 100%;
@@ -99,6 +110,7 @@ top:-200px;
   text-align: center;
   user-select: none;
 }
+
 .label {
    width: 4.5rem;
   margin-top: 15px;
@@ -106,6 +118,7 @@ top:-200px;
   font-size: 1.3rem;
  
 }
+
 .droppable {
   width: 6rem;
   font-size: 4rem;
@@ -113,40 +126,55 @@ top:-200px;
   border: 3px dashed #111;
   transition: 0.2s;
 }
+
 .droppable-hover {
   background-color: #bee3f0;
   transform: scale(1.1);
 }
+
 .dropped {
   border-style: solid;
 }
+
 .dragged {
   user-select: none;
   opacity: 0.1;
   cursor: default;
 }
+
 .draggable.dragged:hover {
   opacity: 0.1;
 }
 
 @media (max-width: 600px) {
-  html { font-size: 14px; }
-  #play-again-btn { top: -0.4rem; }
-  #play-again-btn.play-again-btn-entrance { transform: translateX(7rem); }
+  html {
+    font-size: 14px;
+  }
+
+  #play-again-btn {
+    top: -0.4rem;
+  }
+
+  #play-again-btn.play-again-btn-entrance {
+    transform: translateX(7rem);
+  }
 }
-#demo{
-    font-size: 20px;
-    left:0 px;
+
+#demo {
+  font-size: 20px;
+  left: 0 px;
 }
-.tor{
-  display: inline-block; 
+
+.tor {
+  display: inline-block;
 }
+
 #heart {
   position: relative;
   width: 65px;
   height: 90px;
-  top:-140px;
-  left:890px;
+  top: -140px;
+  left: 890px;
 }
 
 
@@ -163,18 +191,20 @@ top:-200px;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
 }
+
 #heart:after {
   left: 0;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
 }
+
 #hearts {
   display: flex;
   flex-direction: row;
   margin-left: 15%;
   margin-top: 10%;
 }
- .img {
+.img {
   width: 100%;
   height: 100%;
  background-attachment: fixed;
@@ -208,4 +238,8 @@ top:-200px;
 
 #button.fade:hover {
   opacity: 60%;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
