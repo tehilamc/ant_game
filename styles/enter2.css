@@ -76,6 +76,7 @@
   height: 100%;
   position: absolute;
   opacity: 20%;
+  top:-10px;
 }
 .background{
   direction: rtl;
