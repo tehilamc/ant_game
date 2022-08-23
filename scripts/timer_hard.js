@@ -50,3 +50,20 @@ function startTimer(duration, display) {
       display = document.querySelector('#time');
       startTimer(fiveMinutes, display);
     };
+
+
+    
+var ti;
+
+var timeleft = 20;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    ti=0; 
+    // clearInterval(downloadTimer)
+    timer_easy(ti)
+  }
+
+  document.getElementById("progressBar").value = 60 - timeleft;
+  timeleft -= 1;
+}, 1000);
+

@@ -1,17 +1,17 @@
 
-// var ti;
+var ti;
 
-// var timeleft = 60;
-// var downloadTimer = setInterval(function(){
-//   if(timeleft <= 0){
-//     ti=0; 
-//     // clearInterval(downloadTimer)
-//     timer_easy(ti)
-//   }
+var timeleft = 60;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    ti=0; 
+    // clearInterval(downloadTimer)
+    timer_easy(ti)
+  }
 
-//   document.getElementById("progressBar").value = 60 - timeleft;
-//   timeleft -= 1;
-// }, 1000);
+  document.getElementById("progressBar").value = 60 - timeleft;
+  timeleft -= 1;
+}, 1000);
 
 
 function startTimer(duration, display) {
