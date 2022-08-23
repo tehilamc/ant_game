@@ -8,13 +8,21 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+<<<<<<< HEAD
+=======
+  background-color: transparent;
+>>>>>>> main
   /* background-color: #eee; */
   color: #111;
 
 }
 
 .score {
+<<<<<<< HEAD
   top: 500px;
+=======
+  top: 50px;
+>>>>>>> main
   font-family: monospace;
   text-align: center;
   font-size: 2rem;
@@ -60,10 +68,10 @@ body {
 
 .draggable-items {
 
-  top: -150px;
+  top: 700px;
   display: flex;
   justify-content: center;
-  margin: -190px 1rem 1.5rem 1rem;
+  margin: 100px 1rem 1.5rem 1rem;
   transition: opacity 0.5s;
 
 }
@@ -164,11 +172,14 @@ body {
   font-size: 20px;
   left: 0 px;
 }
+<<<<<<< HEAD
 
 .tor {
   display: inline-block;
 }
 
+=======
+>>>>>>> main
 .img {
   width: 100%;
   height: 100%;
