@@ -65,4 +65,3 @@ function timer_normal() {
 
 
 
-
