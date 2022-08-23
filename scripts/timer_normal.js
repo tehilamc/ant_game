@@ -63,7 +63,7 @@ function startTimer(duration, display) {
         timer_easy(ti)
       }
     
-      document.getElementById("progressBar").value = 60 - timeleft;
+      document.getElementById("progressBar").value = 40 - timeleft;
       timeleft -= 1;
     }, 1000);
     
