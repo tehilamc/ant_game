@@ -1,3 +1,6 @@
+var mistakes = [];
+var i = 0;
+
 const brands = [
   {
     iconName: "adobe",
@@ -500,6 +503,9 @@ const brands = [
     color: "#ff0000"
   }
 ];
+
+const answers = document.querySelector("#answer");
+
 let correct = 0;
 let total = 0;
 const totalDraggableItems = 5;
@@ -524,6 +530,7 @@ function initiateGame() {
 
   // Create "draggable-items" and append to DOM
   for (let i = 0; i < randomDraggableBrands.length; i++) {
+    //הצגת האיקונים על המסך
     draggableItems.insertAdjacentHTML("beforeend", `
         <i class="fab fa-${randomDraggableBrands[i].iconName} draggable" draggable="true" style="color: ${randomDraggableBrands[i].color};" id="${randomDraggableBrands[i].iconName}"></i>
       `);
@@ -596,14 +603,26 @@ function drop(event) {
     event.target.classList.add("dropped");
     draggableElement.classList.add("dragged");
     draggableElement.setAttribute("draggable", "false");
+    //קיבוע תמונה נכונה במסגרת 
     event.target.innerHTML = `<i class="fab fa-${draggableElementBrand}" style="color: ${draggableElement.style.color};"></i>`;
     correct++;
   }
+
+  else {
+    mistakes[i] = { icon: draggableItems, mistake: droppableElementBrand, good: draggableElementBrand };
+    // document.getElementById("answer").innerHTML = mistakes[i];
+    console.log(mistakes[i]);
+    const element = document.getElementById("heart");
+    element.remove();
+    i++;
+    if (i == 3) {
+      clearInterval();
+      window.location.replace('game_over.html')
+    }
+  }
+  // console.log(draggableElementBrand);//הטוב
+  // console.log(droppableElementBrand);//השגיאה
   scoreSection.style.opacity = 0;
-  // if(correct==5 && total>=5 && total<=8 && ti>0){
-
-
-  // }
   setTimeout(() => {
     correctSpan.textContent = correct;
     totalSpan.textContent = total;
