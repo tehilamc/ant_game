@@ -1,6 +1,8 @@
 var mistakes = [];
 var i = 0;
-
+var element = document.getElementById("heart");
+console.log(element);
+console.log("666");
 const brands = [
   {
     iconName: "adobe",
@@ -504,7 +506,7 @@ const brands = [
   }
 ];
 
-const answers = document.querySelector("#answer");
+// const answers = document.querySelector("#answer");
 
 let correct = 0;
 let total = 0;
@@ -514,7 +516,7 @@ const totalMatchingPairs = 5; // Should be <= totalDraggableItems
 const scoreSection = document.querySelector(".score");
 const correctSpan = scoreSection.querySelector(".correct");
 const totalSpan = scoreSection.querySelector(".total");
-const playAgainBtn = scoreSection.querySelector("#play-again-btn");
+// const playAgainBtn = scoreSection.querySelector("#play-again-btn");
 
 const draggableItems = document.querySelector(".draggable-items");
 const matchingPairs = document.querySelector(".matching-pairs");
@@ -609,11 +611,36 @@ function drop(event) {
   }
 
   else {
-    mistakes[i] = { icon: draggableItems, mistake: droppableElementBrand, good: draggableElementBrand };
-    // document.getElementById("answer").innerHTML = mistakes[i];
-    console.log(mistakes[i]);
-    const element = document.getElementById("heart");
-    element.remove();
+    // mistakes[i] = { icon: draggableItems, mistake: droppableElementBrand, good: draggableElementBrand };
+    // var ans= document.getElementById("answer");
+    // console.log(ans);
+    // ans.innerHTML = mistakes[i];
+    // console.log(mistakes[i]);
+
+
+    // function myDisplayer(some) {
+    //   document.getElementById("answer").innerHTML = some;
+    // }
+    
+    // function getFile(myCallback) {
+    //   let req = new XMLHttpRequest();
+    //   req.open('GET', "answer.html");
+    //   req.onload = function() {
+    //     if (req.status == 200) {
+    //       myCallback(this.responseText);
+    //     } else {
+    //       myCallback("Error: " + req.status);
+    //     }
+    //   }
+    //   req.send();
+    // }
+    
+    // getFile(myDisplayer); 
+    // setTimeout(() => {
+    //   element = document.getElementById("heart");
+    //   element.remove();
+    // }, 1000);
+
     i++;
     if (i == 3) {
       clearInterval();
@@ -628,12 +655,12 @@ function drop(event) {
     totalSpan.textContent = total;
     scoreSection.style.opacity = 1;
   }, 200);
-  if (correct === Math.min(totalMatchingPairs, totalDraggableItems)) { // Game Over!!
-    playAgainBtn.style.display = "block";
-    setTimeout(() => {
-      playAgainBtn.classList.add("play-again-btn-entrance");
-    }, 200);
-  }
+  // if (correct === Math.min(totalMatchingPairs, totalDraggableItems)) { // Game Over!!
+  //   playAgainBtn.style.display = "block";
+  //   setTimeout(() => {
+  //     playAgainBtn.classList.add("play-again-btn-entrance");
+  //   }, 200);
+  // }
 }
 
 //Other Event Listeners
@@ -647,17 +674,17 @@ function drop(event) {
 //   setTimeout(() => {
 //     scoreSection.style.opacity = 0;
 //   }, 100);
-//   setTimeout(() => {
-//     playAgainBtn.style.display = "none";
-//     while (draggableItems.firstChild) draggableItems.removeChild(draggableItems.firstChild);
-//     while (matchingPairs.firstChild) matchingPairs.removeChild(matchingPairs.firstChild);
-//     initiateGame();
-//     correctSpan.textContent = correct;
-//     totalSpan.textContent = total;
-//     draggableItems.style.opacity = 1;
-//     matchingPairs.style.opacity = 1;
-//     scoreSection.style.opacity = 1;
-//   }, 500);
+setTimeout(() => {
+  // playAgainBtn.style.display = "none";
+  while (draggableItems.firstChild) draggableItems.removeChild(draggableItems.firstChild);
+  while (matchingPairs.firstChild) matchingPairs.removeChild(matchingPairs.firstChild);
+  initiateGame();
+  correctSpan.textContent = correct;
+  totalSpan.textContent = total;
+  draggableItems.style.opacity = 1;
+  matchingPairs.style.opacity = 1;
+  scoreSection.style.opacity = 1;
+}, 500);
 // }
 
 // Auxiliary functions

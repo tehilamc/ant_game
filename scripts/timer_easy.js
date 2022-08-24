@@ -1,4 +1,3 @@
-import { drop } from '/modules/scripts/page.js';
 
 // var ti;
 
@@ -13,6 +12,7 @@ import { drop } from '/modules/scripts/page.js';
 //   timeleft -= 1;
 // }, 1000);
 
+// import { drop } from '/modules/scripts/page.js';
 
 function startTimer(duration, display) {
   var timer = duration, minutes, seconds;
