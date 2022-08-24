@@ -1,3 +1,4 @@
+import { drop } from '/modules/scripts/page.js';
 
 // var ti;
 
