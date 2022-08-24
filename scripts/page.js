@@ -1,8 +1,10 @@
 var mistakes = [];
 var i = 0;
-var element = document.getElementById("heart");
-console.log(element);
-console.log("666");
+// console.log(document.getElementById("answer"));
+// var element = document.getElementById("heart");
+// console.log(element);
+// console.log("666");
+console.log(document.getElementById("answer"));
 const brands = [
   {
     iconName: "adobe",
@@ -636,10 +638,10 @@ function drop(event) {
     // }
     
     // getFile(myDisplayer); 
-    // setTimeout(() => {
-    //   element = document.getElementById("heart");
-    //   element.remove();
-    // }, 1000);
+   
+      element = document.getElementById("heart");
+      element.remove();
+  
 
     i++;
     if (i == 3) {
