@@ -630,9 +630,9 @@ function drop(event) {
     element = document.getElementById("heart");
     element.remove();
     if (num == 3) {
-      localStorage.setItem("mistakes1", JSON.stringify(mistakes[0].mistake+""+mistakes[0].good));
-      localStorage.setItem("mistakes2", JSON.stringify(mistakes[1].mistake+""+mistakes[1].good));
-      localStorage.setItem("mistakes3", JSON.stringify(mistakes[2].mistake+""+mistakes[2].good));
+      localStorage.setItem("mistakes1", JSON.stringify(mistakes[0].mistake+" "+mistakes[0].good));
+      localStorage.setItem("mistakes2", JSON.stringify(mistakes[1].mistake+" "+mistakes[1].good));
+      localStorage.setItem("mistakes3", JSON.stringify(mistakes[2].mistake+" "+mistakes[2].good));
       window.location.replace('game_over.html')
     }
   }
