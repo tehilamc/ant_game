@@ -1,8 +1,6 @@
 var mistakes = [];
-var i = 0;
-// var element = document.getElementById("heart");
-// console.log(element);
-// console.log("666");
+var num = 0;
+
 const brands = [
   {
     iconName: "adobe",
@@ -615,28 +613,20 @@ function drop(event) {
   }
 
   else {
-    mistakes[i] = { icon: draggableItems, mistake: droppableElementBrand, good: draggableElementBrand };
-    // function myDisplayer(some) {
-    //   document.getElementById("answer").innerHTML = some;
-    // }
-
-    // function getFile(myCallback) {
-    //   let req = new XMLHttpRequest();
-    //   req.open('GET', "answer.html");
-    //   req.onload = function() {
-    //     if (req.status == 200) {
-    //       myCallback(this.responseText);
-    //     } else {
-    //       myCallback("Error: " + req.status);
-    //     }
-    //   }
-    //   req.send();
-    // }
-
-    // getFile(myDisplayer); 
-
+    // mistakes[num] = {
+    //   icon: draggableItems,
+    //   mistake: droppableElementBrand,
+    //   good: draggableElementBrand
+    // };
+    mistakes[num] = {
+      mistake: droppableElementBrand,
+      good: draggableElementBrand
+    };
+    localStorage.setItem("mistakes", JSON.stringify(mistakes[num].mistake+" "+mistakes[num].good));
+    num++;
     element = document.getElementById("heart");
     element.remove();
+<<<<<<< HEAD
 i++;
     if (i == 3) {
       // document.getElementById("time").style.display = "none";
@@ -648,6 +638,12 @@ i++;
       //   localStorage.setItem("mistakes1_good",mistakes[j].good);
       // }
       localStorage.setItem("mistakes",JSON.stringify(mistakes));
+=======
+    if (num == 3) {
+      localStorage.setItem("mistakes1", JSON.stringify(mistakes[0].mistake+""+mistakes[0].good));
+      localStorage.setItem("mistakes2", JSON.stringify(mistakes[1].mistake+""+mistakes[1].good));
+      localStorage.setItem("mistakes3", JSON.stringify(mistakes[2].mistake+""+mistakes[2].good));
+>>>>>>> main
       window.location.replace('game_over.html')
     }
   }
