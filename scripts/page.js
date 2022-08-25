@@ -1,3 +1,9 @@
+var mistakes = [];
+var i = 0;
+// var element = document.getElementById("heart");
+// console.log(element);
+// console.log("666");
+console.log(document.getElementById("answer"));
 const brands = [
   {
     iconName: "adobe",
@@ -500,6 +506,9 @@ const brands = [
     color: "#ff0000"
   }
 ];
+
+// const answers = document.querySelector("#answer");
+
 let correct = 0;
 let total = 0;
 const totalDraggableItems = 5;
@@ -508,7 +517,7 @@ const totalMatchingPairs = 5; // Should be <= totalDraggableItems
 const scoreSection = document.querySelector(".score");
 const correctSpan = scoreSection.querySelector(".correct");
 const totalSpan = scoreSection.querySelector(".total");
-const playAgainBtn = scoreSection.querySelector("#play-again-btn");
+// const playAgainBtn = scoreSection.querySelector("#play-again-btn");
 
 const draggableItems = document.querySelector(".draggable-items");
 const matchingPairs = document.querySelector(".matching-pairs");
@@ -524,6 +533,7 @@ function initiateGame() {
 
   // Create "draggable-items" and append to DOM
   for (let i = 0; i < randomDraggableBrands.length; i++) {
+    //הצגת האיקונים על המסך
     draggableItems.insertAdjacentHTML("beforeend", `
         <i class="fab fa-${randomDraggableBrands[i].iconName} draggable" draggable="true" style="color: ${randomDraggableBrands[i].color};" id="${randomDraggableBrands[i].iconName}"></i>
       `);
@@ -596,25 +606,62 @@ function drop(event) {
     event.target.classList.add("dropped");
     draggableElement.classList.add("dragged");
     draggableElement.setAttribute("draggable", "false");
+    //קיבוע תמונה נכונה במסגרת 
     event.target.innerHTML = `<i class="fab fa-${draggableElementBrand}" style="color: ${draggableElement.style.color};"></i>`;
     correct++;
   }
+
+  else {
+    // mistakes[i] = { icon: draggableItems, mistake: droppableElementBrand, good: draggableElementBrand };
+    // var ans= document.getElementById("answer");
+    // console.log(ans);
+    // ans.innerHTML = mistakes[i];
+    // console.log(mistakes[i]);
+
+
+    // function myDisplayer(some) {
+    //   document.getElementById("answer").innerHTML = some;
+    // }
+    
+    // function getFile(myCallback) {
+    //   let req = new XMLHttpRequest();
+    //   req.open('GET', "answer.html");
+    //   req.onload = function() {
+    //     if (req.status == 200) {
+    //       myCallback(this.responseText);
+    //     } else {
+    //       myCallback("Error: " + req.status);
+    //     }
+    //   }
+    //   req.send();
+    // }
+    
+    // getFile(myDisplayer); 
+   
+    element = document.getElementById("heart");
+    element.remove();
+  
+    i++;
+    if (i == 3) {
+      // document.getElementById("time").style.display = "none";
+      // clearInterval();
+      window.location.replace('game_over.html')
+    }
+  }
+  // console.log(draggableElementBrand);//הטוב
+  // console.log(droppableElementBrand);//השגיאה
   scoreSection.style.opacity = 0;
-  // if(correct==5 && total>=5 && total<=8 && ti>0){
-
-
-  // }
   setTimeout(() => {
     correctSpan.textContent = correct;
     totalSpan.textContent = total;
     scoreSection.style.opacity = 1;
   }, 200);
-  if (correct === Math.min(totalMatchingPairs, totalDraggableItems)) { // Game Over!!
-    playAgainBtn.style.display = "block";
-    setTimeout(() => {
-      playAgainBtn.classList.add("play-again-btn-entrance");
-    }, 200);
-  }
+  // if (correct === Math.min(totalMatchingPairs, totalDraggableItems)) { // Game Over!!
+  //   playAgainBtn.style.display = "block";
+  //   setTimeout(() => {
+  //     playAgainBtn.classList.add("play-again-btn-entrance");
+  //   }, 200);
+  // }
 }
 
 //Other Event Listeners
@@ -628,17 +675,17 @@ function drop(event) {
 //   setTimeout(() => {
 //     scoreSection.style.opacity = 0;
 //   }, 100);
-//   setTimeout(() => {
-//     playAgainBtn.style.display = "none";
-//     while (draggableItems.firstChild) draggableItems.removeChild(draggableItems.firstChild);
-//     while (matchingPairs.firstChild) matchingPairs.removeChild(matchingPairs.firstChild);
-//     initiateGame();
-//     correctSpan.textContent = correct;
-//     totalSpan.textContent = total;
-//     draggableItems.style.opacity = 1;
-//     matchingPairs.style.opacity = 1;
-//     scoreSection.style.opacity = 1;
-//   }, 500);
+setTimeout(() => {
+  // playAgainBtn.style.display = "none";
+  while (draggableItems.firstChild) draggableItems.removeChild(draggableItems.firstChild);
+  while (matchingPairs.firstChild) matchingPairs.removeChild(matchingPairs.firstChild);
+  initiateGame();
+  correctSpan.textContent = correct;
+  totalSpan.textContent = total;
+  draggableItems.style.opacity = 1;
+  matchingPairs.style.opacity = 1;
+  scoreSection.style.opacity = 1;
+}, 500);
 // }
 
 // Auxiliary functions
