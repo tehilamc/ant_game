@@ -641,10 +641,6 @@ i++;
     if (i == 3) {
       // document.getElementById("time").style.display = "none";
       // clearInterval();
-<<<<<<< HEAD
-      printMistakes(...mistakes);
-      console.log(i);
-=======
       // printMistakes(...mistakes);
       
       // for(var j=0; j<3;j++){
@@ -652,7 +648,6 @@ i++;
       //   localStorage.setItem("mistakes1_good",mistakes[j].good);
       // }
       localStorage.setItem("mistakes",JSON.stringify(mistakes));
->>>>>>> main
       window.location.replace('game_over.html')
     }
   }
