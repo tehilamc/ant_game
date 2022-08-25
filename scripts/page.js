@@ -642,7 +642,13 @@ function drop(event) {
     if (i == 3) {
       // document.getElementById("time").style.display = "none";
       // clearInterval();
-      printMistakes(...mistakes);
+      // printMistakes(...mistakes);
+      
+      // for(var j=0; j<3;j++){
+      //   localStorage.setItem("mistakes1_mistake",mistakes[j].mistake);
+      //   localStorage.setItem("mistakes1_good",mistakes[j].good);
+      // }
+      localStorage.setItem("mistakes",JSON.stringify(mistakes));
       window.location.replace('game_over.html')
     }
   }
