@@ -626,24 +626,10 @@ function drop(event) {
     num++;
     element = document.getElementById("heart");
     element.remove();
-<<<<<<< HEAD
-i++;
-    if (i == 3) {
-      // document.getElementById("time").style.display = "none";
-      // clearInterval();
-      // printMistakes(...mistakes);
-      
-      // for(var j=0; j<3;j++){
-      //   localStorage.setItem("mistakes1_mistake",mistakes[j].mistake);
-      //   localStorage.setItem("mistakes1_good",mistakes[j].good);
-      // }
-      localStorage.setItem("mistakes",JSON.stringify(mistakes));
-=======
     if (num == 3) {
-      localStorage.setItem("mistakes1", JSON.stringify(mistakes[0].mistake+""+mistakes[0].good));
-      localStorage.setItem("mistakes2", JSON.stringify(mistakes[1].mistake+""+mistakes[1].good));
-      localStorage.setItem("mistakes3", JSON.stringify(mistakes[2].mistake+""+mistakes[2].good));
->>>>>>> main
+      localStorage.setItem("mistakes1", JSON.stringify(mistakes[0].mistake+" "+mistakes[0].good));
+      localStorage.setItem("mistakes2", JSON.stringify(mistakes[1].mistake+" "+mistakes[1].good));
+      localStorage.setItem("mistakes3", JSON.stringify(mistakes[2].mistake+" "+mistakes[2].good));
       window.location.replace('game_over.html')
     }
   }
