@@ -1,32 +1,8 @@
-// console.log(document.getElementById("answer"));
-// import 'scripts/page.js'
-// console.log(mistakes[i]);
-// var mis = [];
-// function writeOnScreen() {
-//     var ans = document.getElementById("ans");
-//     console.log("I am ");
-//     for (var j = 0; j < 3; j++) {
-//         console.log(mis[j] + "aaa");
-//         ans.innerHTML = mis[j];
-//     }
-// }
 
-// function printMistakes() {
-    var x = localStorage.getItem("mistakes");
-    document.getElementById("answer").innerHTML = x;
-    // var ans = document.getElementById("ans");
-    // const answer = document.createElement('answer');
-    // answer.id = 'result';
-    // for (var i = 0; i < mistakes.length; i++) {
-    //     console.log(mistakes[i]);
-        // document.getElementById(ans).innerHTML=mistakes[i];
-                // ans.innerHTML = mistakes[i];
-
-        // mis[i] = mistakes[i];
-        // answer.innerHTML = mistakes[i];
-    // }
-    // var ans= document.getElementById("answer");
-    // console.log(ans);
-    // ans.innerHTML =mistakes;
-    // console.log(mistakes);
-// }
+var x = localStorage.getItem("mistakes1");
+var y = localStorage.getItem("mistakes2");
+var z = localStorage.getItem("mistakes3");
+let subX = x.substr(1, x.length-2);
+let subY = y.substr(1, y.length-2);
+let subZ = z.substr(1, z.length-2);
+document.getElementById("answer").innerHTML = subX +" <br>"+ subY +" <br>"+ subZ;
