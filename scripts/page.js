@@ -1,6 +1,5 @@
 var mistakes = [];
 var i = 0;
-// console.log(document.getElementById("answer"));
 // var element = document.getElementById("heart");
 // console.log(element);
 // console.log("666");
@@ -639,13 +638,13 @@ function drop(event) {
     
     // getFile(myDisplayer); 
    
-      element = document.getElementById("heart");
-      element.remove();
+    element = document.getElementById("heart");
+    element.remove();
   
-
     i++;
     if (i == 3) {
-      clearInterval();
+      // document.getElementById("time").style.display = "none";
+      // clearInterval();
       window.location.replace('game_over.html')
     }
   }

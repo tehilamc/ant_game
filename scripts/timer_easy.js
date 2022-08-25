@@ -16,7 +16,7 @@
 
 function startTimer(duration, display) {
   var timer = duration, minutes, seconds;
-  setInterval(function () {
+  var temp=setInterval(function () {
     minutes = parseInt(timer / 60, 10);
     seconds = parseInt(timer % 60, 10);
 
@@ -26,7 +26,7 @@ function startTimer(duration, display) {
     display.textContent = minutes + ":" + seconds;
 
     if (--timer < 0) {
-      clearInterval();
+      clearInterval(temp);
       window.location.replace('game_over.html');
     }
   }, 1000);
