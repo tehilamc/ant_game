@@ -12,12 +12,13 @@
 // }
 
 function printMistakes() {
-    var ans = document.getElementById("ans");
+    // var ans = document.getElementById("ans");
     // const answer = document.createElement('answer');
     // answer.id = 'result';
     for (var i = 0; i < mistakes.length; i++) {
         console.log(mistakes[i]);
-                ans.innerHTML = mistakes[i];
+        // document.getElementById(ans).innerHTML=mistakes[i];
+                // ans.innerHTML = mistakes[i];
 
         // mis[i] = mistakes[i];
         // answer.innerHTML = mistakes[i];
