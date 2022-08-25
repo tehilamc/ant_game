@@ -3,7 +3,6 @@ var i = 0;
 // var element = document.getElementById("heart");
 // console.log(element);
 // console.log("666");
-console.log(document.getElementById("answer"));
 const brands = [
   {
     iconName: "adobe",
@@ -612,13 +611,8 @@ function drop(event) {
   }
 
   else {
-    // mistakes[i] = { icon: draggableItems, mistake: droppableElementBrand, good: draggableElementBrand };
-    // var ans= document.getElementById("answer");
-    // console.log(ans);
-    // ans.innerHTML = mistakes[i];
-    // console.log(mistakes[i]);
-
-
+    mistakes[i] = { icon: draggableItems, mistake: droppableElementBrand, good: draggableElementBrand };
+    i++;
     // function myDisplayer(some) {
     //   document.getElementById("answer").innerHTML = some;
     // }
@@ -641,10 +635,11 @@ function drop(event) {
     element = document.getElementById("heart");
     element.remove();
   
-    i++;
+    
     if (i == 3) {
       // document.getElementById("time").style.display = "none";
       // clearInterval();
+      printMistakes(...mistakes);
       window.location.replace('game_over.html')
     }
   }
