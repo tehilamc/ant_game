@@ -11,20 +11,22 @@
 //     }
 // }
 
-function printMistakes() {
+// function printMistakes() {
+    var x = localStorage.getItem("mistakes");
+    document.getElementById("answer").innerHTML = x;
     // var ans = document.getElementById("ans");
     // const answer = document.createElement('answer');
     // answer.id = 'result';
-    for (var i = 0; i < mistakes.length; i++) {
-        console.log(mistakes[i]);
+    // for (var i = 0; i < mistakes.length; i++) {
+    //     console.log(mistakes[i]);
         // document.getElementById(ans).innerHTML=mistakes[i];
                 // ans.innerHTML = mistakes[i];
 
         // mis[i] = mistakes[i];
         // answer.innerHTML = mistakes[i];
-    }
+    // }
     // var ans= document.getElementById("answer");
     // console.log(ans);
     // ans.innerHTML =mistakes;
     // console.log(mistakes);
-}
+// }
