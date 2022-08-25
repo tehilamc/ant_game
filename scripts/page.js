@@ -609,8 +609,12 @@ function drop(event) {
     //קיבוע תמונה נכונה במסגרת 
     event.target.innerHTML = `<i class="fab fa-${draggableElementBrand}" style="color: ${draggableElement.style.color};"></i>`;
     correct++;
+    if(correct == 5 && (total >= 5 && total <8)) {
+      window.location.replace("win.html");
+  
+    }
   }
-
+ 
   else {
     // mistakes[i] = { icon: draggableItems, mistake: droppableElementBrand, good: draggableElementBrand };
     // var ans= document.getElementById("answer");
@@ -622,7 +626,7 @@ function drop(event) {
     // function myDisplayer(some) {
     //   document.getElementById("answer").innerHTML = some;
     // }
-    
+
     // function getFile(myCallback) {
     //   let req = new XMLHttpRequest();
     //   req.open('GET', "answer.html");
@@ -635,12 +639,12 @@ function drop(event) {
     //   }
     //   req.send();
     // }
-    
+
     // getFile(myDisplayer); 
-   
+
     element = document.getElementById("heart");
     element.remove();
-  
+
     i++;
     if (i == 3) {
       // document.getElementById("time").style.display = "none";
@@ -648,6 +652,7 @@ function drop(event) {
       window.location.replace('game_over.html')
     }
   }
+
   // console.log(draggableElementBrand);//הטוב
   // console.log(droppableElementBrand);//השגיאה
   scoreSection.style.opacity = 0;
