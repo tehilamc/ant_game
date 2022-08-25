@@ -638,17 +638,13 @@ function drop(event) {
 
     element = document.getElementById("heart");
     element.remove();
-<<<<<<< HEAD
 
-    i++;
-=======
-  
-    
->>>>>>> main
+
     if (i == 3) {
       // document.getElementById("time").style.display = "none";
       // clearInterval();
       printMistakes(...mistakes);
+      console.log(i);
       window.location.replace('game_over.html')
     }
   }
