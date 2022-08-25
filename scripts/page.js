@@ -637,12 +637,7 @@ function drop(event) {
 
     element = document.getElementById("heart");
     element.remove();
-<<<<<<< HEAD
-
-=======
-    i++;
->>>>>>> main
-
+i++;
     if (i == 3) {
       // document.getElementById("time").style.display = "none";
       // clearInterval();
