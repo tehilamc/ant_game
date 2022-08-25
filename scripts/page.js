@@ -608,15 +608,14 @@ function drop(event) {
     //קיבוע תמונה נכונה במסגרת 
     event.target.innerHTML = `<i class="fab fa-${draggableElementBrand}" style="color: ${draggableElement.style.color};"></i>`;
     correct++;
-    if(correct == 5 && (total >= 5 && total <8)) {
+    if (correct == 5 && (total >= 5 && total < 8)) {
       window.location.replace("win.html");
-  
+
     }
   }
- 
+
   else {
     mistakes[i] = { icon: draggableItems, mistake: droppableElementBrand, good: draggableElementBrand };
-    i++;
     // function myDisplayer(some) {
     //   document.getElementById("answer").innerHTML = some;
     // }
@@ -638,7 +637,11 @@ function drop(event) {
 
     element = document.getElementById("heart");
     element.remove();
+<<<<<<< HEAD
 
+=======
+    i++;
+>>>>>>> main
 
     if (i == 3) {
       // document.getElementById("time").style.display = "none";
