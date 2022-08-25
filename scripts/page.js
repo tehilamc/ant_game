@@ -504,7 +504,6 @@ const brands = [
   }
 ];
 
-// const answers = document.querySelector("#answer");
 
 let correct = 0;
 let total = 0;
@@ -618,7 +617,11 @@ function drop(event) {
     //   mistake: droppableElementBrand,
     //   good: draggableElementBrand
     // };
+    let text1="fab-brands-fa";
+    let text2=draggableElementBrand;
+    let result=text1.concat(text2);
     mistakes[num] = {
+      icon: result,
       mistake: droppableElementBrand,
       good: draggableElementBrand
     };
