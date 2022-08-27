@@ -513,13 +513,6 @@ function game() {
   const totalDraggableItems = 5;
   const totalMatchingPairs = 5; // Should be <= totalDraggableItems
 
-<<<<<<< HEAD
-// const answers = document.querySelector("#answer");
-let correct = 0;
-let total = 0;
-const totalDraggableItems = 5;
-const totalMatchingPairs = 5; // Should be <= totalDraggableItems
-=======
   const scoreSection = document.querySelector(".score");
   const correctSpan = scoreSection.querySelector(".correct");
   const totalSpan = scoreSection.querySelector(".total");
@@ -528,7 +521,6 @@ const totalMatchingPairs = 5; // Should be <= totalDraggableItems
   const matchingPairs = document.querySelector(".matching-pairs");
   let draggableElements;
   let droppableElements;
->>>>>>> main
 
   initiateGame();
 
@@ -809,9 +801,3 @@ function checkLevel() {
   }
 }
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> main
