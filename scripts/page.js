@@ -505,7 +505,6 @@ const brands = [
 ];
 
 // const answers = document.querySelector("#answer");
-
 let correct = 0;
 let total = 0;
 const totalDraggableItems = 5;
@@ -686,3 +685,7 @@ function generateRandomItemsArray(n, originalArray) {
   }
   return res;
 }
+
+
+
+
