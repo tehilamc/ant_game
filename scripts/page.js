@@ -3,6 +3,7 @@ var num = 0;
 var level = 1;
 
 const page = document.getElementById('allPage');
+var my_level = localStorage.getItem("levelPlay");
 
 const brands = [
   {
@@ -506,8 +507,92 @@ const brands = [
     color: "#ff0000"
   }
 ];
+
+if (my_level == 1) {
+  console.log("I am in level 1");
+
+  function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    var temp = setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = minutes + ":" + seconds;
+
+      if (--timer < 0) {
+        clearInterval(temp);
+        window.location.replace('game_over.html');
+      }
+    }, 1000);
+  }
+
+  window.onload = function () {
+    var fiveMinutes = 60,
+      display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+  };
+  game();
+}
+if (my_level == 2) {
+  console.log("I am in level2");
+  function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    var temp = setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = minutes + ":" + seconds;
+
+      if (--timer < 0) {
+        clearInterval(temp);
+        window.location.replace('game_over.html');
+      }
+    }, 1000);
+  }
+
+  window.onload = function () {
+    var fiveMinutes = 40,
+      display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+  };
+  console.log("after");
+  game();
+}
+if (my_level == 3) {
+  console.log("I am in level 3");
+  function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    var temp = setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = minutes + ":" + seconds;
+
+      if (--timer < 0) {
+        clearInterval(temp);
+        window.location.replace('game_over.html');
+      }
+    }, 1000);
+  }
+
+  window.onload = function () {
+    var fiveMinutes = 20,
+      display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+  };
+  game();
+}
+
 function game() {
-  // function game(temp_Interval) {
   let correct = 0;
   let total = 0;
   const totalDraggableItems = 5;
@@ -606,7 +691,6 @@ function game() {
       event.target.innerHTML = `<i class="fab fa-${draggableElementBrand}" style="color: ${draggableElement.style.color};"></i>`;
       correct++;
       if (correct == 5 && (total >= 5 && total < 8) && level == 1) {
-
         level = 2;
         console.log("level2");
         correct = 0;
@@ -629,7 +713,7 @@ function game() {
         }, 500);
         // while (draggableItems.firstChild) draggableItems.removeChild(draggableItems.firstChild);
         // while (matchingPairs.firstChild) matchingPairs.removeChild(matchingPairs.firstChild);
-        checkLevel();
+        // checkLevel();
       }
       else {
         if (correct == 5 && (total >= 5 && total < 8) && level == 2) {
@@ -654,7 +738,7 @@ function game() {
             matchingPairs.style.opacity = 1;
             scoreSection.style.opacity = 1;
           }, 500);
-          checkLevel();
+          // checkLevel();
         }
         else {
           if (correct == 5 && (total >= 5 && total < 8) && level == 3) {
@@ -711,94 +795,5 @@ function game() {
     return res;
   }
 }
-if (level == 1) {
-  console.log("I am in level 1");
 
-  function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    var temp = setInterval(function () {
-      minutes = parseInt(timer / 60, 10);
-      seconds = parseInt(timer % 60, 10);
-
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-
-      display.textContent = minutes + ":" + seconds;
-
-      if (--timer < 0) {
-        clearInterval(temp);
-        window.location.replace('game_over.html');
-      }
-    }, 1000);
-    // game(temp);
-  }
-
-  window.onload = function () {
-    var fiveMinutes = 60,
-      display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-  };
-  game();
-}
-function checkLevel() {
-  // var our_level = localStorage.getItem("mistakes2");
-  if (level == 2) {
-    console.log("I am in level2");
-    function startTimer(duration, display) {
-      var timer = duration, minutes, seconds;
-      var temp = setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-          clearInterval(temp);
-          window.location.replace('game_over.html');
-        }
-      }, 1000);
-      // game(temp);
-    }
-
-    window.onload = function () {
-      var fiveMinutes = 40,
-        display = document.querySelector('#time');
-      startTimer(fiveMinutes, display);
-    };
-    console.log("after");
-    // game();
-  }
-  if (level == 3) {
-    console.log("I am in level 3");
-    function startTimer(duration, display) {
-      var timer = duration, minutes, seconds;
-      var temp = setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-          clearInterval(temp);
-          window.location.replace('game_over.html');
-        }
-      }, 1000);
-      // game(temp);
-
-    }
-
-    window.onload = function () {
-      var fiveMinutes = 0,
-        display = document.querySelector('#time');
-      startTimer(fiveMinutes, display);
-    };
-    // game();
-  }
-}
 
