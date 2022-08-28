@@ -611,6 +611,7 @@ function game() {
         console.log("level2");
         correct = 0;
         total = 0;
+        Animation();
         draggableItems.style.opacity = 0;
         matchingPairs.style.opacity = 0;
         setTimeout(() => {
