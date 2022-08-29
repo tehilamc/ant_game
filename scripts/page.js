@@ -774,7 +774,7 @@ function game() {
       // let result=text1.concat(text2);
       // var iconOfWord = `<i class="fab fa-${draggableElementBrand}></i>`;
      var iconOfWord=`fab fa-${draggableElementBrand}`;
-     console.log(iconOfWord);
+    //  console.log(iconOfWord);
       mistakes[num] = {
         // icon: "https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/xbox-256.png",
        icon: iconOfWord,
@@ -785,22 +785,22 @@ function game() {
       num++;
       element = document.getElementById("heart");
       element.remove();
-
-
         var check1 = document.querySelectorAll('.fab');
         console.log(check1);
         console.log(check1[0]);
  
       if (num == 3) {
         localStorage.setItem("mistakes4", JSON.stringify(mistakes[0].icon));
-        localStorage.setItem("mistakes1", JSON.stringify(mistakes[0].icon + ";" + mistakes[0].mistake + ";" + mistakes[0].good));
-        localStorage.setItem("mistakes2", JSON.stringify(mistakes[1].icon + ";" + mistakes[1].mistake + ";" + mistakes[1].good));
-        localStorage.setItem("mistakes3", JSON.stringify(mistakes[2].icon + ";" + mistakes[2].mistake + ";" + mistakes[2].good));
-        localStorage.setItem("myimg0", JSON.stringify(check1[0]));
-        localStorage.setItem("myimg1", JSON.stringify(check1[1]));
-        localStorage.setItem("myimg2", JSON.stringify(check1[2]));
-        localStorage.setItem("myimg3", JSON.stringify(check1[3]));
-        localStorage.setItem("myimg4", JSON.stringify(check1[4]));
+        localStorage.setItem("mistakes5", JSON.stringify(mistakes[1].icon));
+        localStorage.setItem("mistakes6", JSON.stringify(mistakes[2].icon));
+        localStorage.setItem("mistakes1", JSON.stringify(mistakes[0].mistake + " " + mistakes[0].good));
+        localStorage.setItem("mistakes2", JSON.stringify( mistakes[1].mistake + " " + mistakes[1].good));
+        localStorage.setItem("mistakes3", JSON.stringify( mistakes[2].mistake + " " + mistakes[2].good));
+        // localStorage.setItem("myimg0", JSON.stringify(check1[0]));
+        // localStorage.setItem("myimg1", JSON.stringify(check1[1]));
+        // localStorage.setItem("myimg2", JSON.stringify(check1[2]));
+        // localStorage.setItem("myimg3", JSON.stringify(check1[3]));
+        // localStorage.setItem("myimg4", JSON.stringify(check1[4]));
         window.location.replace('game_over.html')
       }
     }

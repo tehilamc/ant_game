@@ -1,30 +1,46 @@
 var x = localStorage.getItem("mistakes1");
 var y = localStorage.getItem("mistakes2");
 var z = localStorage.getItem("mistakes3");
+
+let subX = x.substr(1, x.length-2);
+let subY = y.substr(1, y.length-2);
+let subZ = z.substr(1, z.length-2);
+document.getElementById("answer").innerHTML = subX +"  <br>"+ subY +" <br>"+ subZ;
 // var e = localStorage.getItem("mistakes4");
 // console.log(e);
 // var e=`<i class={localStorage.getItem("mistakes4")}></i>`;
 // console.log(e);
 // document.getElementsById("answer").innerHTML=e;
-console.log(localStorage.getItem("mistakes4"));
+// console.log(localStorage.getItem("mistakes4"));
 var e=document.createElement("i");
 e.className=localStorage.getItem("mistakes4").replace(/["]/g, '');
-console.log(e);
+// console.log(e);
 var answers=document.getElementById("answer");
-answers.append(e)
+answers.append(e);
+var r=document.createElement("i");
+r.className=localStorage.getItem("mistakes5").replace(/["]/g, '');
+// console.log(e);
+var answerss=document.getElementById("answer");
+answerss.append(r);
+var q=document.createElement("i");
+q.className=localStorage.getItem("mistakes6").replace(/["]/g, '');
+// console.log(e);
+var answersss=document.getElementById("answer");
+answersss.append(q);
+
 //pictures
-var aimg = localStorage.getItem("myimg0");
+// var aimg = localStorage.getItem("myimg0");
 
 // console.log(aimg);
-var bimg = localStorage.getItem("myimg1");
-var cimg = localStorage.getItem("myimg2");
-var dimg = localStorage.getItem("myimg3");
-var eimg = localStorage.getItem("myimg4");
-var imgarr = [aimg, bimg, cimg, dimg, eimg];
+// var bimg = localStorage.getItem("myimg1");
+// var cimg = localStorage.getItem("myimg2");
+// var dimg = localStorage.getItem("myimg3");
+// var eimg = localStorage.getItem("myimg4");
+// var imgarr = [aimg, bimg, cimg, dimg, eimg];
 
-var wordsX = x.split(';');
-var wordsY = y.split(';');
-var wordsZ = z.split(';');
+// var wordsX = x.split(';');
+// var wordsY = y.split(';');
+// var wordsZ = z.split(';');
 
 // let subX = x.substr(1, x.length-2);
 // let subY = y.substr(1, y.length-2);
@@ -34,25 +50,25 @@ var wordsZ = z.split(';');
 // document.getElementsById("anser").innerHTML="h"
 
 
-for (let i=0 ; i< imgarr.length; i++) {
-    console.log(imgarr[i]);
-    console.log(wordsX[1]);
-    if (imgarr[i] == wordsX[1]) {
-        var pic0 = wordsX[0] + `"`;
-    }
-    if (imgarr[i] == wordsY[1]) {
-        var pic1 = wordsY[0] + `"`;
-    }
-    if (imgarr[i] == wordsZ[1]) {
-        var pic2 = wordsZ[0] + `"`;
-    }
-}
+// for (let i=0 ; i< imgarr.length; i++) {
+//     console.log(imgarr[i]);
+//     console.log(wordsX[1]);
+//     if (imgarr[i] == wordsX[1]) {
+//         var pic0 = wordsX[0] + `"`;
+//     }
+//     if (imgarr[i] == wordsY[1]) {
+//         var pic1 = wordsY[0] + `"`;
+//     }
+//     if (imgarr[i] == wordsZ[1]) {
+//         var pic2 = wordsZ[0] + `"`;
+//     }
+// }
 
 
 // var myHTML =
-// "<img src=" + pic0  + ">" +  wordsX[1] + wordsX[2]+ `<br>` +
-// "<img src=" + pic1  + ">" +  wordsY[1] + wordsY[2]+ `<br>` +
-// "<img src=" + pic2  + ">" +  wordsZ[1]+ wordsZ[2]; 
+//  wordsX[1] + wordsX[2]+ `<br>` +
+//   wordsY[1] + wordsY[2]+ `<br>` +
+//  wordsZ[1]+ wordsZ[2]; 
 
 // document.getElementById("answer").innerHTML = myHTML;
 
