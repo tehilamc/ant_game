@@ -14,8 +14,6 @@ var downloadTimer = setInterval(function(){
 }, 1000);
 
 
-
-
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -38,9 +36,6 @@ function startTimer(duration, display) {
     display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
   };
-
-
-
 
 function timer_easy() {
   if(ti==0){
