@@ -773,10 +773,11 @@ function game() {
       // let text2=draggableElementBrand;
       // let result=text1.concat(text2);
       // var iconOfWord = `<i class="fab fa-${draggableElementBrand}></i>`;
-     var iconOfWord= `<i class="fab fa-"${draggableElementBrand}"></i>`;
+     var iconOfWord=`fab fa-${draggableElementBrand}`;
      console.log(iconOfWord);
       mistakes[num] = {
-        icon: "https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/xbox-256.png",
+        // icon: "https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/xbox-256.png",
+       icon: iconOfWord,
         mistake: droppableElementBrand,
         good: draggableElementBrand
       };
@@ -791,6 +792,7 @@ function game() {
         console.log(check1[0]);
  
       if (num == 3) {
+        localStorage.setItem("mistakes4", JSON.stringify(mistakes[0].icon));
         localStorage.setItem("mistakes1", JSON.stringify(mistakes[0].icon + ";" + mistakes[0].mistake + ";" + mistakes[0].good));
         localStorage.setItem("mistakes2", JSON.stringify(mistakes[1].icon + ";" + mistakes[1].mistake + ";" + mistakes[1].good));
         localStorage.setItem("mistakes3", JSON.stringify(mistakes[2].icon + ";" + mistakes[2].mistake + ";" + mistakes[2].good));

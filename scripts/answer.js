@@ -1,6 +1,15 @@
 var x = localStorage.getItem("mistakes1");
 var y = localStorage.getItem("mistakes2");
 var z = localStorage.getItem("mistakes3");
+// var e = localStorage.getItem("mistakes4");
+// console.log(e);
+// var e=`<i class={localStorage.getItem("mistakes4")}></i>`;
+// console.log(e);
+// document.getElementsById("answer").innerHTML=e;
+var e=document.createElement("i");
+e.class=localStorage.getItem("mistakes4");
+console.log(e);
+document.getElementsById("answer").append(e);
 
 
 //pictures
@@ -40,12 +49,12 @@ for (let i=0 ; i< imgarr.length; i++) {
 }
 
 
-var myHTML =
-"<img src=" + pic0  + ">" +  wordsX[1] + wordsX[2]+ `<br>` +
-"<img src=" + pic1  + ">" +  wordsY[1] + wordsY[2]+ `<br>` +
-"<img src=" + pic2  + ">" +  wordsZ[1]+ wordsZ[2]; 
+// var myHTML =
+// "<img src=" + pic0  + ">" +  wordsX[1] + wordsX[2]+ `<br>` +
+// "<img src=" + pic1  + ">" +  wordsY[1] + wordsY[2]+ `<br>` +
+// "<img src=" + pic2  + ">" +  wordsZ[1]+ wordsZ[2]; 
 
-document.getElementById("answer").innerHTML = myHTML;
+// document.getElementById("answer").innerHTML = myHTML;
 
 
 
