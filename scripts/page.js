@@ -534,6 +534,13 @@ if (my_level == 1) {
       display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
   };
+  $("#progressTimer").progressTimer({
+    timeLimit: 60,
+    warningThreshold: 10,
+    baseStyle: 'bg-warning progress-bar-striped progress-bar-animated',
+    warningStyle: 'bg-danger progress-bar-striped progress-bar-animated',
+    completeStyle: 'bg-info progress-bar-striped progress-bar-animated',
+});
   game();
 }
 if (my_level == 2) {
@@ -562,6 +569,13 @@ if (my_level == 2) {
     startTimer(fiveMinutes, display);
   };
   console.log("after");
+  $("#progressTimer").progressTimer({
+    timeLimit: 40,
+    warningThreshold: 10,
+    baseStyle: 'bg-warning progress-bar-striped progress-bar-animated',
+    warningStyle: 'bg-danger progress-bar-striped progress-bar-animated',
+    completeStyle: 'bg-info progress-bar-striped progress-bar-animated',
+});
   game();
 }
 if (my_level == 3) {
@@ -589,6 +603,13 @@ if (my_level == 3) {
       display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
   };
+  $("#progressTimer").progressTimer({
+    timeLimit: 20,
+    warningThreshold: 10,
+    baseStyle: 'bg-warning progress-bar-striped progress-bar-animated',
+    warningStyle: 'bg-danger progress-bar-striped progress-bar-animated',
+    completeStyle: 'bg-info progress-bar-striped progress-bar-animated',
+});
   game();
 }
 
@@ -806,6 +827,7 @@ function game() {
     return res;
   }
 }
+
 
 
 

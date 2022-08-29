@@ -185,7 +185,7 @@ body {
   position: absolute;
   width: 50px;
   padding: 15px;
-  top:512px;
+  top:508px;
   left:1220px;
   border: none;
   border-radius: 2px;
@@ -208,7 +208,7 @@ body {
   position: relative;
   width: 65px;
   height: 90px;
-  top: -140px;
+ top:-158px;
   left: 890px;
 }
 
@@ -238,4 +238,14 @@ flex-direction: row;
 margin-left: 15%;
 margin-top: 10%;
 }
+#progressTimer {
+  width:250px;
+ margin-top: 10px;
+  /* height:5px; */
+  height: 20px !important;
+}
+#time{
+ font-size: 25px;
+ margin-top:10px;
 
+}

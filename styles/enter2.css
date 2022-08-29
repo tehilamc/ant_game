@@ -1,98 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 
 body {
   font-family: "Sofia", sans-serif;
-  font-size: 30px;
+  
 }
 
 .title {
   color: rgb(125, 200, 125);
   direction: rtl;
-  font-size: 50px;
+  font-size: 60px;
   margin-top: 80px;
   text-align: center;
-<<<<<<< HEAD
-  margin-left:140px;
-  /* font-family: --system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-  font-family: "Titan One", cursive;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-=======
-  margin-left: 140px;
->>>>>>> main
+  margin-left: 200px;
 
 }
 
 
-<<<<<<< HEAD
 .level_easy{
-  padding: 20px;
-=======
-.level_easy {
-  /* -ms-transform: translate(-50%, -50%); */
-  padding: 15px;
->>>>>>> main
+  padding: 30px;
   transform: translate(0%, 0%);
 
 
 }
-<<<<<<< HEAD
 .level_normal{
-=======
-
-.level_normal {
-
-  /* -ms-transform: translate(-50%, -50%); */
->>>>>>> main
   transform: translate(0%, 0%);
-  padding: 20px;
+  padding: 30px;
 
 }
-<<<<<<< HEAD
 .level_hard{
   transform: translate(0%, 0%);
-  padding: 20px;
+  padding: 30px;
  
-=======
-
-.level_hard {
-  /* -ms-transform: translate(100%, 10%); */
-  transform: translate(0%, 0%);
-  padding: 15px;
-
->>>>>>> main
 }
 
 .easy {
-  width: 130px;
-  height: 130px;
+  margin-top:30px;
+  width: 150px;
+  height: 150px;
   font-size: 10px;
   border-radius: 50%;
-  border-width: 10px;
+  border-width: 15px;
   border-color: yellow;
   background: transparent;
   font-size: 20px;
+
 
 }
 
 
 .normal {
+  margin-top:30px;
   font-size: 20px;
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border-width: 10px;
+  border-width: 15px;
   background: transparent;
   border-color: orange;
 
 }
 
 .hard {
-  width: 130px;
-  height: 130px;
+  margin-top:30px;
+  width: 150px;
+  height: 150px;
   font-size: 10px;
   border-radius: 50%;
-  border-width: 10px;
+  border-width: 15px;
   border-color: red;
   background: transparent;
   font-size: 20px;
@@ -107,11 +80,7 @@ body {
   background-color: white;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   /* font-family:Georgia, 'Times New Roman', Times, serif; */
-=======
-  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
->>>>>>> main
 }
 
 .img {
@@ -125,20 +94,11 @@ body {
 .background {
 
   direction: rtl;
-<<<<<<< HEAD
   right:100px;
 left:-100px;
 position: absolute;
 top: 0%;
 width: 100%;
-=======
-  right: 100px;
-  left: -100px;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  position: absolute;
-  top: 0%;
-  width: 100%;
->>>>>>> main
 }
 
 #button {
