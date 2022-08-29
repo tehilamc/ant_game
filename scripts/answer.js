@@ -6,12 +6,12 @@ var z = localStorage.getItem("mistakes3");
 // var e=`<i class={localStorage.getItem("mistakes4")}></i>`;
 // console.log(e);
 // document.getElementsById("answer").innerHTML=e;
+console.log(localStorage.getItem("mistakes4"));
 var e=document.createElement("i");
-e.class=localStorage.getItem("mistakes4");
+e.className=localStorage.getItem("mistakes4").replace(/["]/g, '');
 console.log(e);
-document.getElementsById("answer").append(e);
-
-
+var answers=document.getElementById("answer");
+answers.append(e)
 //pictures
 var aimg = localStorage.getItem("myimg0");
 
