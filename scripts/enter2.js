@@ -1,3 +1,4 @@
+localStorage.clear();
 var minute;
  function checkLevel1() {
   window.location.replace('page.html');
