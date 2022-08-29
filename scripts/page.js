@@ -754,7 +754,9 @@ function game() {
       // let text1="fab fa-";
       // let text2=draggableElementBrand;
       // let result=text1.concat(text2);
-      var iconOfWord = `<i class="fab fa-${draggableElementBrand}></i>`;
+      // var iconOfWord = `<i class="fab fa-${draggableElementBrand}></i>`;
+     var iconOfWord= `<i class="fab fa-"${draggableElementBrand}"></i>`;
+     console.log(iconOfWord);
       mistakes[num] = {
         icon: iconOfWord,
         mistake: droppableElementBrand,
