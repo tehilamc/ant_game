@@ -5,28 +5,32 @@ var z = localStorage.getItem("mistakes3");
 let subX = x.substr(1, x.length-2);
 let subY = y.substr(1, y.length-2);
 let subZ = z.substr(1, z.length-2);
-document.getElementById("answer").innerHTML = subX +"  <br>"+ subY +" <br>"+ subZ;
-// var e = localStorage.getItem("mistakes4");
-// console.log(e);
-// var e=`<i class={localStorage.getItem("mistakes4")}></i>`;
-// console.log(e);
-// document.getElementsById("answer").innerHTML=e;
-// console.log(localStorage.getItem("mistakes4"));
+
+
+//איקון ראשון
 var e=document.createElement("i");
 e.className=localStorage.getItem("mistakes4").replace(/["]/g, '');
-// console.log(e);
-var answers=document.getElementById("answer");
+var answers=document.getElementById("answer1");
 answers.append(e);
+document.getElementById("answer4").innerHTML =subX+" <br>" +" <br>";
+//איקון שני
 var r=document.createElement("i");
 r.className=localStorage.getItem("mistakes5").replace(/["]/g, '');
-// console.log(e);
-var answerss=document.getElementById("answer");
+var answerss=document.getElementById("answer2");
 answerss.append(r);
+document.getElementById("answer5").innerHTML =subY+" <br>"+" <br>" ;
+//איקון שלישי
 var q=document.createElement("i");
 q.className=localStorage.getItem("mistakes6").replace(/["]/g, '');
-// console.log(e);
-var answersss=document.getElementById("answer");
+var answersss=document.getElementById("answer3");
 answersss.append(q);
+document.getElementById("answer6").innerHTML =subZ+" <br>";
+// document.getElementById("answer1").innerHTML =subX+" <br>" ;
+
+// document.getElementById("answer2").innerHTML =subY+" <br>" ;
+
+// document.getElementById("answer3").innerHTML =subZ+" <br>";
+
 
 //pictures
 // var aimg = localStorage.getItem("myimg0");
@@ -38,10 +42,6 @@ answersss.append(q);
 // var eimg = localStorage.getItem("myimg4");
 // var imgarr = [aimg, bimg, cimg, dimg, eimg];
 
-// var wordsX = x.split(';');
-// var wordsY = y.split(';');
-// var wordsZ = z.split(';');
-
 // let subX = x.substr(1, x.length-2);
 // let subY = y.substr(1, y.length-2);
 // let subZ = z.substr(1, z.length-2);
@@ -49,20 +49,6 @@ answersss.append(q);
 // var h="fab fa-google";
 // document.getElementsById("anser").innerHTML="h"
 
-
-// for (let i=0 ; i< imgarr.length; i++) {
-//     console.log(imgarr[i]);
-//     console.log(wordsX[1]);
-//     if (imgarr[i] == wordsX[1]) {
-//         var pic0 = wordsX[0] + `"`;
-//     }
-//     if (imgarr[i] == wordsY[1]) {
-//         var pic1 = wordsY[0] + `"`;
-//     }
-//     if (imgarr[i] == wordsZ[1]) {
-//         var pic2 = wordsZ[0] + `"`;
-//     }
-// }
 
 
 // var myHTML =
@@ -75,3 +61,9 @@ answersss.append(q);
 
 
 
+// var e = localStorage.getItem("mistakes4");
+// console.log(e);
+// var e=`<i class={localStorage.getItem("mistakes4")}></i>`;
+// console.log(e);
+// document.getElementsById("answer").innerHTML=e;
+// console.log(localStorage.getItem("mistakes4"));

@@ -1,7 +1,57 @@
- #answer {
+ #answer1 {
     text-align: justify;
     padding-left: 450px;
      margin-top: 50px;
+     font-size: 50px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     word-spacing: 100px;
+     justify-content: space-between;
+     direction: ltr;
+ }
+ #answer2 {
+    text-align: justify;
+    padding-left: 450px;
+     margin-top: 50px;
+     font-size: 50px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     word-spacing: 100px;
+     justify-content: space-between;
+     direction: ltr;
+ }
+ #answer3 {
+    text-align: justify;
+    padding-left: 450px;
+     margin-top: 50px;
+     font-size: 50px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     word-spacing: 100px;
+     justify-content: space-between;
+     direction: ltr;
+ }
+ #answer4 {
+    text-align: justify;
+    padding-left: 450px;
+     /* margin-top: 50px; */
+     font-size: 50px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     word-spacing: 100px;
+     justify-content: space-between;
+     direction: ltr;
+ }
+ #answer5 {
+    text-align: justify;
+    padding-left: 450px;
+     /* margin-top: 50px; */
+     font-size: 50px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     word-spacing: 100px;
+     justify-content: space-between;
+     direction: ltr;
+ }
+ #answer6 {
+    text-align: justify;
+    padding-left: 450px;
+     /* margin-top: 50px; */
      font-size: 50px;
      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      word-spacing: 100px;
@@ -141,4 +191,8 @@
         opacity: 1;
         transform: translateY(0px);
     }
+}
+.order{
+    margin-left: 100px;
+    margin-top: -300px;
 }
