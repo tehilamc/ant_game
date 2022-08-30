@@ -69,8 +69,9 @@
     text-align: justify;
     padding-left: 400px;
      margin-top: 50px;
-     font-size: 50px;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 40px;
+     /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+     font-family: 'Black Ops One', cursive;
      word-spacing: 100px;
      justify-content: space-between;
      direction: ltr;
@@ -78,9 +79,10 @@
  #answer4 ,#answer5,#answer6{
     text-align: justify;
     padding-left: 420px;
-     font-size: 45px;
+     font-size: 40px;
      margin-top: 12px;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+     font-family: 'Black Ops One', cursive;
      word-spacing: 100px;
      justify-content: space-between;
      direction: ltr;
@@ -158,19 +160,24 @@
      display: inline-block;
      justify-content: space-between;
    padding-right: 50px;
+   margin-top: 30px;
 
  }
  .a{
     padding-left:500px;
     color: red;
-    /* word-spacing: 20px; */
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
  }
 .b{
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
     color: green;
 }
 >>>>>>> main
 .btn:link,
 .btn:visited {
+    font-family: 'Black Ops One', cursive;
     width: 200px;
     height: 40px;
 <<<<<<< HEAD
@@ -178,6 +185,7 @@
     background-color: #91def7;
 =======
     top: 80%;
+    font-size: 20px;
     background-color:#91def7;
 >>>>>>> main
     left: 43%;
