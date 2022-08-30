@@ -1,11 +1,4 @@
 
-
-
-// var canvas = document.createElement("canvas");
-// document.body.appendChild(canvas);
-// var ctx = canvas.getContext("2d");
-// ctx.font = "150px Arial";
-// ctx.fillText("Hello World",10,5);
 var canvas = document.getElementById("canvas");
 document.body.appendChild(canvas);
 var ctx = canvas.getContext("2d");
@@ -14,13 +7,10 @@ ctx.fillStyle = "red";
 ctx.textAlign = "center";
 ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
 
-
 var W = window.innerWidth;
 var H = window.innerHeight;
-
 canvas.width = W;
 canvas.height = H;
-
 var w = window;
 var requestAnimFrame =
   w.requestAnimationFrame ||
@@ -106,84 +96,4 @@ function update() {
 }
 function delay() {window.location= "enter.html";}
 main();
-
-
-
-
-// var c = document.getElementById("canv");
-// var $ = c.getContext("2d");
-// c.width = window.innerWidth;
-// c.height = window.innerHeight;
-
-// var px = 0;
-// var py = 0;
-// var blend = 100;
-
-// function splotch(x, y, r, col) {
-//   $.fillStyle = 'rgba(' + col.r + ', ' + col.g + ', ' + col.b + ', ' + col.a + ')';
-//   $.beginPath();
-//   $.arc(x, y, r, 0, Math.PI * 2, false);
-//   $.fill();
-// }
-
-// function bleed(px, py, pr, pcol) {
-//   var i = 0;
-//   var x = px;
-//   var y = py;
-//   var r = pr;
-//   var col = pcol;
-
-//   function inv(){
-//     window.requestAnimationFrame(inv);
-//     splotch(x, y, r * (i / blend), col);
-//     if (i == blend) window.cancelAnimationFrame(inv);
-//     i++;
-//   }
-//   inv();
-// }
-// function anim() {
-//   window.requestAnimationFrame(anim);
-//   var px = Math.floor(Math.random() * c.width);
-//   var py = Math.floor(Math.random() * c.height);
-//   var pr = Math.floor(Math.random() * 50);
-//   var pcol = {
-//     r: Math.floor(Math.random() * 255),
-//     g: Math.floor(Math.random() * 255),
-//     b: Math.floor(Math.random() * 255),
-//     a: 1 / blend
-//   }
-//   bleed(px, py, pr, pcol);
-// }
-// anim();
-
-// /*___
-// left click to reload | 
-// right click to download image
-// ___*/
-// window.addEventListener('mousedown',function(e){
-//   if(e.button==0)
-//   document.location.href = document.location.href;
-//   else if(e.button==2){
-//      e.preventDefault();
-//     var img = c.toDataURL("image/png");
-//     var dl = document.createElement('a');
-//     dl.href = img;
-//     dl.download = "canvas.png";
-//     var event = document.createEvent('MouseEvents');
-//     event.initEvent( "click", true, false );
-//     dl.dispatchEvent(event)
-//   }
-// },false);
-
-// window.addEventListener('touchstart',function(e){
-//   e.preventDefault();
-//   document.location.href = document.location.href;
-// },false);
-
-// /*___Resize___*/
-// window.addEventListener('resize',function(){
-//   c.width = window.innerWidth;
-//   c.height = window.innerHeight;
-// }, false);
-
 
