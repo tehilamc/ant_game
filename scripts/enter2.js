@@ -13,14 +13,8 @@ function checkLevel3() {
   startTimer(20);
 }
 
-
-// location.replace('page.html');
-
-
-
 var timeInSecs;
 var ticker;
-
 function startTimer(secs) {
   timeInSecs = parseInt(secs);
   ticker = setInterval("tick()", 1000);

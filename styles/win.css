@@ -1,4 +1,3 @@
-/* @import url(https://fonts.googleapis.com/css?family=Kaushan+Script); */
 
 body{
   width:100%; 
@@ -9,12 +8,11 @@ body{
 h1{
   left: 50%;
   position: absolute;
-  top: 40%;
+  top: 30%;
   transform: translate( -50%, -50%);
-  font-size:3em;
+  font-size:5em;
   font-family: 'Kaushan Script', cursive;
   -webkit-text-stroke: 1px hsla(0,0%,0%,.3);
-  /* color: transparent; */
   color:pink;
 }
 h2{
@@ -22,10 +20,9 @@ h2{
     position: absolute;
     top: 50%;
     transform: translate( -50%, -50%);
-    font-size:3em;
+    font-size:4em;
     font-family: 'Kaushan Script', cursive;
     -webkit-text-stroke: 1px hsla(0,0%,0%,.3);
-    /* color: transparent; */
     color:pink;
   }
 canvas {
