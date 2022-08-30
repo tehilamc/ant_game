@@ -1,6 +1,6 @@
- #answer1 {
+ #answer1,#answer2,#answer3{
     text-align: justify;
-    padding-left: 450px;
+    padding-left: 400px;
      margin-top: 50px;
      font-size: 50px;
      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -8,51 +8,11 @@
      justify-content: space-between;
      direction: ltr;
  }
- #answer2 {
+ #answer4 ,#answer5,#answer6{
     text-align: justify;
-    padding-left: 450px;
-     margin-top: 50px;
-     font-size: 50px;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     word-spacing: 100px;
-     justify-content: space-between;
-     direction: ltr;
- }
- #answer3 {
-    text-align: justify;
-    padding-left: 450px;
-     margin-top: 50px;
-     font-size: 50px;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     word-spacing: 100px;
-     justify-content: space-between;
-     direction: ltr;
- }
- #answer4 {
-    text-align: justify;
-    padding-left: 450px;
-     /* margin-top: 50px; */
-     font-size: 50px;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     word-spacing: 100px;
-     justify-content: space-between;
-     direction: ltr;
- }
- #answer5 {
-    text-align: justify;
-    padding-left: 450px;
-     /* margin-top: 50px; */
-     font-size: 50px;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     word-spacing: 100px;
-     justify-content: space-between;
-     direction: ltr;
- }
- #answer6 {
-    text-align: justify;
-    padding-left: 450px;
-     /* margin-top: 50px; */
-     font-size: 50px;
+    padding-left: 420px;
+     font-size: 45px;
+     margin-top: 12px;
      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      word-spacing: 100px;
      justify-content: space-between;
@@ -90,44 +50,25 @@
      opacity: 60%;
  }
 
- /* .btn_play_again {
-     margin: 0;
-     position: absolute;
-     top: 80%;
-     background-color: ֳֳ#91def7;
-     left: 43%;
- }
-
- .again {
-     width: 200px;
-     height: 50px;
-     font-size: 20px;
-     background-color: ֳֳ#91def7;
-   color:  ֳֳ#91def7;
-     border-radius: 50px;
-     border-color: #91def7;
-     width: 200px;
-     height: 50px;
-     text-align: center;
-
- } */
-
  #tor {
      display: inline-block;
      justify-content: space-between;
-   
+   padding-right: 50px;
 
  }
  .a{
-    padding-left: 450px;
+    padding-left:500px;
+    color: red;
     /* word-spacing: 20px; */
  }
-
+.b{
+    color: green;
+}
 .btn:link,
 .btn:visited {
     width: 200px;
     height: 40px;
-    top: 75%;
+    top: 80%;
     background-color:#91def7;
     left: 43%;
     text-transform: uppercase;
