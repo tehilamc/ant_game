@@ -807,6 +807,8 @@ function game() {
         localStorage.setItem("mistakes1", JSON.stringify(mistakes[0].mistake + " " + mistakes[0].good));
         localStorage.setItem("mistakes2", JSON.stringify( mistakes[1].mistake + " " + mistakes[1].good));
         localStorage.setItem("mistakes3", JSON.stringify( mistakes[2].mistake + " " + mistakes[2].good));
+     
+     
         // localStorage.setItem("myimg0", JSON.stringify(check1[0]));
         // localStorage.setItem("myimg1", JSON.stringify(check1[1]));
         // localStorage.setItem("myimg2", JSON.stringify(check1[2]));

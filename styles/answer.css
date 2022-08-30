@@ -2,9 +2,8 @@
     text-align: justify;
     padding-left: 400px;
      margin-top: 50px;
-     font-size: 40px;
-     /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-     font-family: 'Black Ops One', cursive;
+     font-size: 60px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      word-spacing: 100px;
      justify-content: space-between;
      direction: ltr;
@@ -14,8 +13,7 @@
     padding-left: 420px;
      font-size: 40px;
      margin-top: 12px;
-     /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-     font-family: 'Black Ops One', cursive;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      word-spacing: 100px;
      justify-content: space-between;
      direction: ltr;
@@ -54,21 +52,25 @@
 
  #tor {
      display: inline-block;
-     justify-content: space-between;
+     /* justify-content: space-between; */
    padding-right: 50px;
-   margin-top: 30px;
 
  }
  .a{
+    font-family: 'Black Ops One', cursive;
     padding-left:500px;
     color: red;
     font-size: 40px;
-    font-family: 'Black Ops One', cursive;
+    margin-top: 20px;
+
+    
+    /* word-spacing: 20px; */
  }
 .b{
-    font-size: 40px;
     font-family: 'Black Ops One', cursive;
     color: green;
+    font-size: 40px;
+    margin-top: 20px;
 }
 .btn:link,
 .btn:visited {
