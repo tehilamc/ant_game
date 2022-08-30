@@ -7,13 +7,10 @@ ctx.fillStyle = "red";
 ctx.textAlign = "center";
 ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
 
-
 var W = window.innerWidth;
 var H = window.innerHeight;
-
 canvas.width = W;
 canvas.height = H;
-
 var w = window;
 var requestAnimFrame =
   w.requestAnimationFrame ||
