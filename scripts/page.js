@@ -775,21 +775,21 @@ function game() {
       // var iconOfWord = `<i class="fab fa-${draggableElementBrand}></i>`;
      var iconOfWord=`fab fa-${draggableElementBrand}`;
     //  console.log(iconOfWord);
-  //  let colorIcon;
-  //  for( let t=0; t<brands.length; t++){
-  //   if(brands[t].iconName==draggableElementBrand){
-  //     colorIcon=brands[t].color;
-  //   }
-  //  }
-  //  let col= `color: ${colorIcon};`
+   let colorIcon;
+   for( let t=0; t<brands.length; t++){
+    if(brands[t].iconName==draggableElementBrand){
+      colorIcon=brands[t].color;
+    }
+   }
+   let col= `color: ${colorIcon};`
       mistakes[num] = {
         // icon: "https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/xbox-256.png",
        icon: iconOfWord,
-      //  color:col,
+       color:col,
         mistake: droppableElementBrand,
         good: draggableElementBrand
       };
-      // console.log(mistakes[0].color);
+      console.log(mistakes[0].color);
       // localStorage.setItem("mistakes", JSON.stringify(mistakes[num].mistake+" "+mistakes[num].good));
       num++;
       element = document.getElementById("heart");
@@ -800,7 +800,8 @@ function game() {
  
       if (num == 3) {
         // console.log("***********");
-        // localStorage.setItem("mistakes1_color", JSON.stringify(mistakes[0].color));
+        localStorage.setItem("mistakes1_color", JSON.stringify(mistakes[0].color));
+        // console.log(mistakes1_color);
         localStorage.setItem("mistakes4", JSON.stringify(mistakes[0].icon));
         localStorage.setItem("mistakes5", JSON.stringify(mistakes[1].icon));
         localStorage.setItem("mistakes6", JSON.stringify(mistakes[2].icon));

@@ -11,9 +11,10 @@ let subZ = z.substr(1, z.length-2);//Cuts the incorrect and correct company name
 //First icon for the first mistake 
 var e=document.createElement("i");//Creates an icon type element
 e.className=localStorage.getItem("mistakes4").replace(/["]/g, '');//Inserting the icon-type element into the class and removing unnecessary quotation marks
-// console.log(e.className);
+console.log(e);
 // var z=document.createElement("i");
-// z.style.color=localStorage.getItem("mistakes1_color");
+e.style.color=localStorage.getItem("mistakes1_color");
+console.log(e);
 // var answersss=document.getElementById("answer7");//Defines and initializes a variable that will be inserted into the value in the HTML by its id
 // answersss.append(z);
 var answers1=document.getElementById("answer1");//Defines and initializes a variable that will be inserted into the value in the HTML by its id
