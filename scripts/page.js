@@ -800,6 +800,7 @@ function game() {
  
       if (num == 3) {
         // console.log("***********");
+<<<<<<< HEAD
         localStorage.setItem("mistakes1_color", JSON.stringify(mistakes[0].color));
         // console.log(mistakes1_color);
         localStorage.setItem("mistakes4", JSON.stringify(mistakes[0].icon));
@@ -810,6 +811,18 @@ function game() {
         localStorage.setItem("mistakes3", JSON.stringify( mistakes[2].mistake + " " + mistakes[2].good));
      
      
+=======
+        // localStorage.setItem("mistakes1_color", JSON.stringify(mistakes[0].color));
+        localStorage.setItem("icon1", JSON.stringify(mistakes[0].icon));
+        localStorage.setItem("icon2", JSON.stringify(mistakes[1].icon));
+        localStorage.setItem("icon3", JSON.stringify(mistakes[2].icon));
+        localStorage.setItem("mistake1", JSON.stringify(mistakes[0].mistake));
+        localStorage.setItem("good1", JSON.stringify(mistakes[0].good));
+        localStorage.setItem("mistake2", JSON.stringify(mistakes[1].mistake));
+        localStorage.setItem("good2", JSON.stringify(mistakes[1].good));
+        localStorage.setItem("mistake3", JSON.stringify( mistakes[2].mistake));
+        localStorage.setItem("good3", JSON.stringify(mistakes[2].good));
+>>>>>>> main
         // localStorage.setItem("myimg0", JSON.stringify(check1[0]));
         // localStorage.setItem("myimg1", JSON.stringify(check1[1]));
         // localStorage.setItem("myimg2", JSON.stringify(check1[2]));
