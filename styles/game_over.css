@@ -78,7 +78,7 @@ body {
     background: #ebeded;
 } */
 
-#tudo {
+#word {
     opacity: 60%;
     text-align: center;
     position: fixed;
@@ -136,7 +136,7 @@ body {
 
 }
 
-.yes a {
+.yes_again a {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -153,7 +153,7 @@ body {
     float: left;
 }
 
-.yes1 a {
+.erro a {
     text-align: center;
     font-size: 30px;
     font-weight: bold;

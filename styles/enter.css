@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 
-
+/* Background picture */
 .img {
   top:0%;
   width: 100%;
@@ -9,7 +9,7 @@
   position: absolute;
   opacity: 30%;
 }
-.con {
+.content {
   position: absolute;
   left: 50%;
   top: 80%;
@@ -54,8 +54,7 @@
 .container {
   position:fixed;
   min-height: 100vh;
-  /* position: relative; */
-  width: 100vw;
+    width: 100vw;
   display: flex;
   background-color: white;
   justify-content: center;
@@ -64,6 +63,7 @@
 
 
 }
+/* the audio button */
 #button {
   font-size: 16px;
   color: #eee;
@@ -85,6 +85,7 @@
 #button.fade:hover {
   opacity: 60%;
 }
+/* Animation for the game */
 @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 
 .wrapper {

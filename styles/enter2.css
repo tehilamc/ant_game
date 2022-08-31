@@ -84,6 +84,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* Background picture */
 
 .img {
   width: 100%;
@@ -102,7 +103,7 @@ position: absolute;
 top: 0%;
 width: 100%;
 }
-
+/* the audio button */
 #button {
   font-size: 16px;
   color: #eee;
@@ -124,7 +125,7 @@ width: 100%;
 #button.fade:hover {
   opacity: 60%;
 }
-
+/* The animation of the buttons of the levels */
 .animate {
   animation-duration: 0.75s;
   animation-delay: 0.5s;
